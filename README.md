@@ -17,7 +17,7 @@ Jupyter Notebook Learning Samples Project. 🔊
 $ python3 -m venv venv
 ```
 
-## Running Step:
+## App Running Steps:
 1. Jump into the **working directory**.
 2. Run the following command lines.
 
