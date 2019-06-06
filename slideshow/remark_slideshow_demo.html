@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Title</title>
+    <meta charset="utf-8">
+    <meta name="keywords" content="remark,remarkjs,markdown,slideshow,presentation" />
+    <meta name="description" content="A simple, in-browser, markdown-driven slideshow tool." />
+    <meta name="description" content="powered by https://remarkjs.com/." />
+    <!-- link rel="stylesheet" href="./remark_bundles/remark_slideshow.css" --> 
+    <link rel="stylesheet" href="./remark_bundles/remark_slideshow_cn.css"> 
+    <style>
+    </style>
+  </head>
+  <body>
+    <textarea id="source">
+name: inverse
+layout: true
+class: center, middle, inverse
+---
+
+.inverse[
+  # 幻灯片标题页 Cover Page
+]
+
+## 这是remark.js的幻灯片演示。一个采用Markdown标记语言制作，基于网页浏览器，适用于移动/桌面端的幻灯片演示。
+
+## Why we need it? Check out the official introduction via link below.
+
+.footnote[前往 [该项目Github仓库](https://github.com/gnab/remark)]
+
+---
+layout: false
+
+## 内容规划 Agenda
+
+- 第一部分：基本介绍
+- 第二部分：知识点深入
+- 第三部分：更多...
+
+1. Introduction
+2. Deep-dive
+3. ...
+
+---
+template: inverse
+
+## 第一部分：基本介绍
+
+---
+.left-column[
+**基本介绍**
+#### Basic Intro
+]
+.right-column[
+### 内容简介
+
+不知道该写些什么好，别怪我，这就是个演示，也仅仅只是个演示而已。要不和我一起唱...
+
+- 一二三
+- 一二三
+- 一二三四五六七 .red[*]
+
+### Introduction
+
+Have no idea what I could write down here. Don't blame me. This is a demo and merely a demo as well. Let's sing together...
+
+- One Two Three
+- One Two Three
+- One Two Three Four Five Six Seven .red[*]
+
+.footnote[.red[*] At least browsers try their best]
+]
+
+---
+template: inverse
+
+## 第二部分：知识点深入
+
+---
+name: how
+
+.left-column[
+### 如何工作?
+#### remark & Markdown
+]
+.right-column[
+Markdown格式文本会被转换成由Javascript语言驱动的每一幅幻灯片:
+
+```remark
+# 1号幻灯片
+这幅是1号幻灯片
+
+---
+# 2号幻灯片
+这幅是2号幻灯片
+```
+
+.slides[
+  .first[
+    这幅是1号幻灯片
+  ]
+  .second[
+    这幅是2号幻灯片
+  ]
+]
+
+为了区分每一幅幻灯片，在 .red[remark] 中对于Markdown的语法规范只有一个例外情况:
+
+  - 那就是由三个短横线“---”组成的行用于分割上下Markdown文本内容成独立的幻灯片
+
+请参考 [Markdown网站](http://daringfireball.net/projects/markdown/) 了解更多有关Markdown格式的知识。
+
+此外，推荐一个下一代的Markdown文本编辑器软件[Marktext](https://github.com/marktext/marktext)，适用于Windows/Mac OS/Linux平台哦。
+]
+---
+.left-column[
+### 如何工作?
+#### Markdown Inside HTML
+]
+.right-column[
+采用HTML文档内嵌Markdown标记语言的方法生成幻灯片:
+
+```xml
+<!DOCTYPE html>
+<html>
+  <head>
+    <style type="text/css">
+      /* Slideshow styles */
+    </style>
+  </head>
+  <body>
+*   <textarea id="source">
+      <!-- Slideshow Markdown -->
+    &lt;/textarea&gt;
+*   <script src="remark.js">
+    </script>
+    <script>
+*     var slideshow = remark.create();
+    </script>
+  </body>
+</html>
+```
+
+下载 .red[remark] 到本地，或直接引用在线 [最新版本](http://remarkjs.com/downloads/remark-latest.min.js) CDN库文件。
+]
+---
+template: inverse
+
+## 当然咯，Markdown能够走的更远...
+
+---
+.left-column[
+### 更多资源
+#### Markdown扩展
+]
+.right-column[
+以下是一些适用于 .red[remark] 的扩展功能和资源列表:
+
+- 幻灯片CSS类属性表示方法：
+
+```remark
+.footnote[.red.bold[*] 重要注脚]
+```
+
+输出的 HTML 代码如下:
+
+```xml
+<span class="footnote">
+  <span class="red bold">*</span> 重要注脚
+</span>
+```
+
+- 源代码语法高亮显示功能，采用 [highlight.js](https://highlightjs.org) 扩展，参看 [高亮语法显示配置](https://github.com/gnab/remark/wiki/Configuration#highlighting) 说明。
+
+- 幻灯片属性 [完整清单](https://github.com/gnab/remark/wiki/Markdown#slide-properties) 。
+
+- 详细介绍和使用说明 [remark wiki](https://github.com/gnab/remark/wiki) 。
+]
+
+---
+.left-column[
+### 更多资源
+#### 快捷键
+]
+.right-column[
+快捷键说明: 
+  - 按键 .red[P] 切换包含时间、重点、笔记预览的演讲者模式。语法说明：采用三个问号“???”组成的行分割幻灯片内容和笔记备注。
+
+```
+Slide 1 content
+
+*???
+
+Slide 1 notes
+
+---
+
+Slide 2 content
+
+*???
+
+Slide 2 notes
+```
+
+  - 按键 .red[C] 打开可用于导航、演讲的克隆视图新窗口。
+]
+---
+template: inverse
+
+# 感谢观看！
+
+## 本幻灯片演示由 [dyslab](https://github.com/dyslab) 创建。
+
+## 特别鸣谢 [remark](https://github.com/gnab/remark) 带来的创新体验！
+
+    </textarea>
+    <!--
+      NOTE: 
+
+      Visit https://remarkjs.com/ for more help.
+      Download or link to the latest version of remark.js via the following link. 
+      <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    -->
+    <script src="./remark_bundles/remark.min.js"></script>
+    <script>
+      var hljs = remark.highlighter.engine;
+    </script>
+    <script src="./remark_bundles/remark.language.js"></script>
+    <script>
+      var slideshow = remark.create({
+          highlightStyle: 'monokai',
+          highlightLanguage: 'remark',
+          highlightLines: true
+        }) ;
+    </script>
+    <!--
+    <script>
+      var slideshow = remark.create();
+    </script>
+    -->
+  </body>
+</html>
