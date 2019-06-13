@@ -10,7 +10,7 @@ __pycache__/
 .Python
 build/
 bin/
-share/
+share/python-wheels/
 develop-eggs/
 dist/
 downloads/
