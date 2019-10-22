@@ -4,8 +4,6 @@ Jupyter Notebook Learning Samples Project. 🔊
 
 (Note: This project is running based on Python virtual environment 'venv'.)
 
----
-
 ## The prerequisite of the project:
 1. Python venv environment (version 3.6 or above).
 2. Jupyter Notebook. 
@@ -33,7 +31,7 @@ or
 ```
 $ ./nbstart
 ```
-*(note: run **`chmod a+x ./nbstart`** before run above shell script)*
+*(note: run the command line **`chmod a+x ./nbstart`** before running above shell script)*
 
 Go now...
 
