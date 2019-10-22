@@ -1,8 +1,10 @@
 # jnb-sample
+
 Jupyter Notebook Learning Samples Project. 🔊 
 
 (Note: This project is running based on Python virtual environment 'venv'.)
 
+---
 
 ## The prerequisite of the project:
 1. Python venv environment (version 3.6 or above).
@@ -25,7 +27,20 @@ $ python3 -m venv venv
 $ . venv/bin/activate
 $ jupyter notebook
 ```
-just go now...
 
+or
 
-2019-5-28
+```
+$ ./nbstart
+```
+*(note: run **`chmod a+x ./nbstart`** before run above shell script)*
+
+Go now...
+
+---
+
+Document Information:
+
+- *Last modified on 22 Oct 2019.*
+
+- *Created on 28 May 2019.*
