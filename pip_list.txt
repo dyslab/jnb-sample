@@ -2,7 +2,6 @@ Package                           Version
 --------------------------------- -----------
 attrs                             19.1.0     
 backcall                          0.1.0      
-beakerx                           1.4.1      
 bleach                            3.1.0      
 bqplot                            0.11.5     
 branca                            0.3.1      

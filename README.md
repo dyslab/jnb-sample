@@ -26,28 +26,40 @@ $ python3 -m venv venv
 
 2. Run the following command lines.
 
-```
+```bash
 $ . venv/bin/activate
-$ jupyter notebook
+(venv)$ jupyter notebook
 ```
 
 or
 
-```
+```bash
 $ ./nbstart
 ```
 *(note: run the command line **`chmod a+x ./nbstart`** before running above shell script)*
 
-Go now...
+- Packages list (venv mode): See [pip_list.txt](pip_list.txt)
 
 
 ---
 
 
-- Packages list: See [pip_list.txt](pip_list.txt)
+## IMPORTANT NOTICE: beakerx launching.
+
+Launching beakerx based on conda environment . all command lines listed below.
+
+```bash
+(base) $ beakerx
+```
+
+- Packages list (conda/beakerx mode): See [pip_list_beakerx.txt](pip_list_beakerx.txt)
+
+
+---
+
 
 - Document Information:
 
--- *Last modified on 26 Oct 2019.*
+-- *Last modified on 1 Nov 2019.*
 
 -- *Created on 28 May 2019.*
