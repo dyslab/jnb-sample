@@ -61,12 +61,14 @@ Jupyter Notebook Learning Samples Project. 🔊
 
 3. Packages list (conda mode): See [pip_list_beakerx.txt](pip_list_beakerx.txt)
 
+PS: It seems there's certain conflict existed in my jupyter/nbextensions configuration between the venv and conda, whereas it's not a big problem and ok to work.
+
 
 ---
 
 
 Document Information:
 
--- *Last modified on 2 Nov 2019.*
+-- *Last modified on 3 Nov 2019.*
 
 -- *Created on 28 May 2019.*
