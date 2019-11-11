@@ -43,7 +43,29 @@ Jupyter Notebook Learning Samples Project. 🔊
     ```
     *(note: run the command line **`chmod a+x ./nbstart`** before running above shell script)*
 
-3. Packages list (venv mode): See [pip_list.txt](pip_list.txt)
+3. Installed modules via **pip**:
+
+    - IPython
+
+    - Jupyter
+
+    - jupyter-contrib-nbextensions (note: command line `$ jupyter contrib nbextension install --user` enable notebook extensions)
+
+    - Pandas (along with `numpy`)
+
+    - xlrd
+
+    - matplotlib
+
+    - Pillow
+
+    - pyecharts
+
+    - ipyleaflet
+
+    - autopep8
+
+4. All packages list (venv mode): See [pip_list.txt](pip_list.txt)
 
 
 ---
@@ -69,6 +91,6 @@ PS: It seems there's certain conflict existed in my jupyter/nbextensions configu
 
 Document Information:
 
--- *Last modified on 3 Nov 2019.*
+- *Last modified on 12 Nov 2019.*
 
--- *Created on 28 May 2019.*
+- *Created on 28 May 2019.*
