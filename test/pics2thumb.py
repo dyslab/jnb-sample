@@ -1,6 +1,8 @@
 '''
     This is a Python3 app.
 
+    Purpose: Thumbnailing pictures from source path to destination path.
+
     Usage: python3 pics2thumb.py [src] [dest]
 
     Run command line 'python3 pics2thumb.py -h' for more information about usage.
@@ -30,8 +32,8 @@ def thumbPics(sPath, dPath):
     def _thumbPic(_sFilePath, _sBasePath, _dTargetPath, counter):
         if str(_sFilePath).find(str(_dTargetPath)) != 0:
             counter += 1
-            sourcePic = _sFilePath
-            targetPic = _dTargetPath / _sFilePath.relative_to(_sBasePath)
+            sourcePic = Path(_sFilePath)
+            targetPic = Path(_dTargetPath / _sFilePath.relative_to(_sBasePath))
             im = Image.open(sourcePic).convert("RGB")
             originSize = im.size
             thumbnail_size = (200, 200) # Thumbnail size.
@@ -64,27 +66,35 @@ def thumbPics(sPath, dPath):
 # --------------------------------------------------------------------------
 # Main process Separator
 # --------------------------------------------------------------------------
-parser = argparse.ArgumentParser(description='Thumbnailing pictures for specific folder and its subfolders.')
-parser.add_argument('src', type=str, nargs='?', help='Pathname of source folder. default to [working path]')
-parser.add_argument('dest', type=str, nargs='?', help='Pathname of destination folder. default to [working path]/_thumnbs_/')
+parser = argparse.ArgumentParser(
+    description='Thumbnailing pictures for specific folder and its subfolders.'
+)
+parser.add_argument(
+    'src',
+    type=str,
+    nargs='?',
+    default=str(Path.cwd()),
+    help='Pathname of source folder. default to [working path]'
+)
+parser.add_argument(
+    'dest',
+    type=str,
+    nargs='?',
+    default=Path.cwd() / '_thumbs_',
+    help='Pathname of destination folder. default to [working path]/_thumnbs_/'
+)
 args = parser.parse_args()
 
-# Default values.
-if args.src is not None:
-    try:
-        sPath = Path(args.src).resolve()
-    except OSError as e:
-        print(e)
-        exit()
-else:
-    sPath = Path.cwd()
+# Check exceptions.
+try:
+    sPath = Path(args.src).resolve()
+except OSError as e:
+    print(e)
+    exit()
 
-if args.dest is not None:
-    dPath = PurePath(args.dest)
-    if not dPath.is_absolute():
-        dPath = Path.cwd() / dPath
-else:
-    dPath = Path.cwd() / '_thumbs_'
+dPath = PurePath(args.dest)
+if not dPath.is_absolute():
+    dPath = Path.cwd() / dPath
 
 try:
     thumbPics(sPath, dPath)
