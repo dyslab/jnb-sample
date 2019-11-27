@@ -65,7 +65,9 @@ Jupyter Notebook Learning Samples Project. 🔊
 
     - autopep8
 
-4. All packages list (venv mode): See [pip_list.txt](pip_list.txt)
+4. All packages list (venv mode): See [requirements.txt](requirements.txt)
+
+    Then, you were able to install the prerequisite packages by CLI `pip install -U -r requirements.txt` in your virtual environment. (BTW: Exporting requirements.txt by CLI `pip freeze > requirements.txt`)
 
 
 ---
@@ -91,6 +93,6 @@ PS: It seems there's certain conflict existed in my jupyter/nbextensions configu
 
 Document Information:
 
-- *Last modified on 12 Nov 2019.*
+- *Last modified on 27 Nov 2019.*
 
 - *Created on 28 May 2019.*
