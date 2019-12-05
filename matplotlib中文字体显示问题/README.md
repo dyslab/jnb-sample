@@ -17,7 +17,7 @@
 
 2. **取得 matplotlib 字体文件存放目录，其路径为：[matplotlib配置文件所在目录]/fonts/ttf/**
 
-    本例中，matplotlib 字体文件存放与 `/home/vincento/pws/jnb-sample/venv/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/`
+    本例中，matplotlib 字体文件存放于 `/home/vincento/pws/jnb-sample/venv/lib/python3.5/site-packages/matplotlib/mpl-data/fonts/ttf/`
 
 
 3. **把本目录中的字体文件 CESI_xx_GB2312.ttf 拷贝到 matplotlib 字体文件存放路径中。**
