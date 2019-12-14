@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ title }}</title>
+    <meta name="description" content="Auto Gallery Template">
+    <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
+    <!-- Front End Framework: JQuery / Bootstrap -->
+    <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.bootcss.com/paginationjs/2.1.4/pagination.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center" id="demo">
+        <div class="col-12 data-container"></div>
+      </div>
+    </div>
+<!-- Scripts begin -->
+<script src="https://cdn.bootcss.com/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/popper.js/1.15.0/esm/popper.min.js"></script>
+<script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://cdn.bootcss.com/paginationjs/2.1.4/pagination.min.js"></script>
+<script>
+  $(window).ready(function() {
+    var generateData = function(number) {
+      var result = [];
+      for (var i = 1; i < number + 1; i++) {
+        result.push(i);
+      }
+      return result;
+    };
+
+    var template = function(data) {
+      var html = '<ul class="list-unstyled">';
+      $.each(data, function(index, item) {
+          html += '<li class="list-item border mt-1 text-center">'+ item +'</li>';
+      });
+      html += '</ul>';
+      return html;
+    };
+
+    $('#demo').pagination({
+        dataSource: generateData(120),
+        pageSize: 10,
+        callback: function(data, pagination) {
+          var dataContainer = $(".data-container");
+          var html = template(data);
+          dataContainer.html(html);
+        }
+    })
+  });
+</script>
+<!-- Scripts end   -->
+  </body>
+</html>
