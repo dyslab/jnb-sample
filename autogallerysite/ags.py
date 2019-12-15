@@ -15,7 +15,7 @@
         basepath: the file path where this file located in.
         more information shown by class method 'repr()'.
 '''
-import os, json
+import os, json, math
 from pathlib import Path
 from PIL import Image
 
@@ -35,8 +35,13 @@ class AutoGallerySite(object):
         self._basePath, self._baseName = os.path.split(__file__)
         self._templatePath = os.path.join(self._basePath, 'templates')
         self._getConfigJson()
-        self._thumbImageSize = (400, 400)   # Thumbnail image size (w,h)
         self._recentAction = None
+        # Computed thumbnail image width and height by constant scale
+        self._fixedImageScale = 1.3334    
+        self._thumbImageSizeW = 200
+        self._thumbImageSizeH = math.ceil(self._thumbImageSizeW * self._fixedImageScale)
+        self._thumbImageName = 'pix.jpg'
+        self._galleyHtmlName = 'galley.html'
 
     def __repr__(self):
         '''
@@ -86,9 +91,30 @@ class AutoGallerySite(object):
             Generate gallery index html file to output folder
         '''
         sPath, sName = os.path.split(str(srcpath))
-        dPath = thumpath
+        dPath = os.path.join(thumpath, self._galleyHtmlName)
         self.log('TEST: gallery path [{}]'.format(sPath))
         self.log('TEST: html file path [{}]'.format(dPath))
+
+    def _fixThumbnail(self, im):
+        '''
+            Generate thumbnail image with a constant scale
+        '''
+        iW = im.width / self._thumbImageSizeW
+        iH = im.height / self._thumbImageSizeH
+        resizeW = im.width
+        resizeH = im.height
+        if iW > iH:
+            resizeW = math.ceil(im.width / iW * iH)
+        else:
+            resizeH = math.ceil(im.height / iH * iW)
+        resizeImage = im.crop((
+            0,                                              # left
+            0,                                              # upper
+            im.width - round((im.width - resizeW), 0),      # right
+            im.height - round((im.height - resizeH), 0)     # lower
+        ))
+        resizeImage.thumbnail((self._thumbImageSizeW, self._thumbImageSizeH))
+        return resizeImage
 
     def _geneThumb(self, filepath):
         '''
@@ -104,11 +130,13 @@ class AutoGallerySite(object):
                 if not os.path.exists(thumbPath):
                     os.makedirs(thumbPath, exist_ok=True)
                 # Generate thumbnail
-                thumbFile = os.path.join(thumbPath, 'index.jpg')
+                thumbFile = os.path.join(thumbPath, self._thumbImageName)
                 with Image.open(filepath).convert("RGB") as im:
-                    im.thumbnail(self._thumbImageSize)
+                    im = self._fixThumbnail(im)
                     im.save(thumbFile, "JPEG", quality=90)
-                self.log('Generated thumbnail image file [{}]'.format(thumbFile), 'warning')
+                self.log('Generated thumbnail image file [{}]'.format(
+                    Path(thumbFile).relative_to(Path(self._outputHtmlPath).parent)
+                    ), 'warning')
                 # Generate html index page
                 self._geneGalleyHtml(thumbPath, filepath)
                 # Save this actioned path
