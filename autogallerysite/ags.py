@@ -36,15 +36,18 @@ class AutoGallerySite(object):
         self._basePath, self._baseName = os.path.split(__file__)
         # Record last action info
         self._recentAction = None
-        # Get configured info from config.json
-        self._getConfigJson()
-        # Computed thumbnail image width and height by constant scale
+        # Initlize inside variables, Computed thumbnail image width and height by constant scale
+        self._galleryURL = ''
         self._fixedImageScale = 1.3334    
         self._thumbImageSizeW = 200
         self._thumbImageSizeH = math.ceil(self._thumbImageSizeW * self._fixedImageScale)
         self._thumbImageName = 'pix.jpg'
         self._galleryPageName = 'gallery.html'
-        self._galleryIndexPageName = 'index.html'
+        self._indexPageName = 'index.html'
+        self._templateGalleryPage = os.path.join('default', self._galleryPageName)
+        self._templateIndexPage = os.path.join('default', self._indexPageName)
+        # Get configured info from config.json
+        self._getConfigJson()
         # Setup Jinja2 environment
         self._templatePath = os.path.join(self._basePath, 'templates')
         self._setupJinja2Env()
@@ -63,30 +66,57 @@ class AutoGallerySite(object):
         '''
             Read configuration from config.json
         '''
-        jsonFilePath = os.path.join(self._workPath, 'config.json')
+        self._configJsonFile = os.path.join(self._workPath, 'config.json')
         self.log('Read Configured Json File:')
-        self.log(jsonFilePath, 'info')
+        self.log(self._configJsonFile, 'info')
         try:
-            with open(jsonFilePath) as fjson:
+            with open(self._configJsonFile) as fjson:
                 self._configJson = json.load(fjson)
                 fjson.close()
-            # 
+
+            # Required Parameter: gallery_path
             self._galleryPath = os.path.abspath(
                 os.path.join(self._workPath, self._configJson['gallery_path'])
             )
             self.log('Gallery Source Path:')
             self.log(self._galleryPath, 'info')
-            if 'gallery_url' in self._configJson:
-                self._galleryURL = self._configJson['gallery_url']
-            else:
-                self._galleryURL = ''
-            self.log('Gallery URL:')
-            self.log(self._galleryURL, 'info')
+
+            # Required Parameter: output_html_path
             self._outputHtmlPath = os.path.abspath(
                 os.path.join(self._workPath, self._configJson['output_html_path'])
             )
             self.log('HTML Files Output Path:')
             self.log(self._outputHtmlPath, 'info')
+
+            # Optional Parameter: gallery_url
+            if 'gallery_url' in self._configJson:
+                self._galleryURL = self._configJson['gallery_url']
+            self.log('Gallery URL:')
+            self.log(self._galleryURL, 'info')
+
+            # Optional Parameter: template_gallery_page
+            if 'template_gallery_page' in self._configJson:
+                self._templateGalleryPage = self._configJson['template_gallery_page']
+                tmpPath, self._galleryPageName = os.path.split(self._templateGalleryPage)
+
+            # Optional Parameter: template_index_page
+            if 'template_index_page' in self._configJson:
+                self._templateIndexPage = self._configJson['template_index_page']
+                tmpPath, self._indexPageName = os.path.split(self._templateIndexPage)
+
+            # Optional Parameter: thumb_image_width
+            if 'thumb_image_width' in self._configJson:
+                try:
+                    self._thumbImageSizeW = int(self._configJson['thumb_image_width'])
+                except OSError:
+                    pass
+
+            # Optional Parameter: thumb_image_height
+            if 'thumb_image_height' in self._configJson:
+                try:
+                    self._thumbImageSizeH = int(self._configJson['thumb_image_height'])
+                except OSError:
+                    pass
         except OSError as e:
             self.log('Error message: %s' % e.strerror, 'error')
             exit(e.errno)
@@ -101,25 +131,26 @@ class AutoGallerySite(object):
                 autoescape=select_autoescape(enabled_extensions=('html', 'htm'))
             )
             self.log('Jinja2 Environment Created.')
+            self.listTemplates()
             self.log('Initializing Templates:')
-            self._templateIndexHtml = self._jinja2Env.get_template(
-                self._galleryIndexPageName,
+            self._templateIndexObj = self._jinja2Env.get_template(
+                self._templateIndexPage,
                 globals = {
                     'title': '图库索引页'
                 }
             )
-            self.log('Template [%s] initialized OK.' % self._galleryIndexPageName, 'warning')
-            self._templateGalleryHtml = self._jinja2Env.get_template(
-                self._galleryPageName,
+            self.log('Template [%s] initialized OK.' % self._templateIndexPage, 'warning')
+            self._templateGalleryObj = self._jinja2Env.get_template(
+                self._templateGalleryPage,
                 globals = {
                     'title': '图库页'
                 }
             )
-            self.log('Template [%s] initialized OK.' % self._galleryPageName, 'warning')
+            self.log('Template [%s] initialized OK.' % self._templateGalleryPage, 'warning')
         except TemplateNotFound as e:
             self.log('Template [%s] not found. initialized FAIL.' % e.message, 'error')
             exit(e.errno)
-    
+
     def _isImageFile(self, filepath):
         '''
             Whether the file which indicated by filepath is image file or not
@@ -174,7 +205,7 @@ class AutoGallerySite(object):
         )
         relativeIndexPagePath = os.path.join(
             tmpPath,
-            self._templateIndexHtml.name
+            self._indexPageName
         )
         return {
             'imgBaseUrl': self._fixedPath(self._galleryURL),
@@ -186,7 +217,7 @@ class AutoGallerySite(object):
             'genDatetime': datetime.date.today()
         }
 
-    def _geneGalleryHtml(self, thumpath, srcpath):
+    def _geneGalleryPage(self, thumpath, srcpath):
         '''
             Generate gallery html file to output folder
         '''
@@ -194,12 +225,12 @@ class AutoGallerySite(object):
         dPath = os.path.join(thumpath, self._galleryPageName)
         try:
             gCtx = self._getGalleryContext(srcpath, Path(dPath))
-            self._templateGalleryHtml.stream(gCtx).dump(dPath)
+            self._templateGalleryObj.stream(gCtx).dump(dPath)
             self.log('Generated html file [{}]'.format(
                 Path(dPath).relative_to(Path(self._outputHtmlPath).parent)
             ), 'warning')
-        except IOError as e:
-            self.log(e.msg, 'error')
+        except TemplateNotFound as e:
+            self.log(e.strerror, 'error')
             pass
 
     def _fixThumbnail(self, im):
@@ -246,7 +277,7 @@ class AutoGallerySite(object):
                     Path(thumbFile).relative_to(Path(self._outputHtmlPath).parent)
                     ), 'warning')
                 # Generate html index page
-                self._geneGalleryHtml(thumbPath, filepath)
+                self._geneGalleryPage(thumbPath, filepath)
                 # Save this actioned path
                 self._recentAction = thumbPath
             except IOError as e:
@@ -276,15 +307,15 @@ class AutoGallerySite(object):
         '''
             Generate gallery index html page to output folder
         '''
-        dPath = os.path.join(self._outputHtmlPath, self._galleryIndexPageName)
+        dPath = os.path.join(self._outputHtmlPath, self._indexPageName)
         try:
             iCtx = self._getIndexContext()
-            self._templateIndexHtml.stream(iCtx).dump(dPath)
+            self._templateIndexObj.stream(iCtx).dump(dPath)
             self.log('Generated html file [{}]'.format(
                 Path(dPath).relative_to(Path(self._outputHtmlPath).parent)
             ), 'warning')
-        except IOError as e:
-            self.log(e.msg, 'error')
+        except TemplateNotFound as e:
+            self.log(e.strerror, 'error')
             pass
 
     def log(self, msg, *args):
@@ -302,6 +333,44 @@ class AutoGallerySite(object):
         else:
             print('>>> \033[{}m {} \033[0m'.format(textColorCode, msg))
 
+    def listTemplates(self):
+        '''
+            List all available templates
+        '''
+        if self._jinja2Env is not None:
+            self.log('Available Templates:')
+            for t in self._jinja2Env.list_templates():
+                self.log(t, 'info')
+    
+    def listVariables(self):
+        '''
+            List main variables of the instance
+        '''
+        self.log('Configured json file:')
+        self.log('<self._configJsonFile = "{}",\tConfigured json file>'.format(
+            self._configJsonFile), 'warning')
+        self.log('Inside variables:')
+        self.log('<self._galleryPath = "{}",\tGallery source path>'.format(
+            self._galleryPath), 'info')
+        self.log('<self._outputHtmlPath = "{}",\tHtml and Thumbnail image files output folder path>'.format(
+            self._outputHtmlPath), 'info')
+        self.log('<self._galleryURL = "{}",\tGallery URL on Internet>'.format(
+            self._galleryURL), 'info')
+        self.log('<self._thumbImageSizeW = "{}",\tThumbnail image maximum width>'.format(
+            self._thumbImageSizeW), 'info')
+        self.log('<self._thumbImageSizeH = "{}",\tThumbnail image maximum height>'.format(
+            self._thumbImageSizeH), 'info')
+        self.log('<self._thumbImageName = "{}",\tThumbnail image output filename>'.format(
+            self._thumbImageName), 'info')
+        self.log('<self._galleryPageName = "{}",\tGallery html page output filename>'.format(
+            self._galleryPageName), 'info')
+        self.log('<self._indexPageName = "{}",\tGallery Index html page output filename>'.format(
+            self._indexPageName), 'info')
+        self.log('<self._templateGalleryPage = "{}",\tInitialized template for Gallery html pages>'.format(
+            self._templateGalleryPage), 'info')
+        self.log('<self._templateIndexPage = "{}",\tInitialized template for Gallery Index html page>'.format(
+            self._templateIndexPage), 'info')
+    
     def geneGalleryAndIndex(self):
         '''
             Generate thumbnail image amd html files to output folder 
@@ -325,6 +394,8 @@ class AutoGallerySite(object):
         # Generate gallery index html page to output folder
         self._geneIndex()
 
+# Main process
 ags = AutoGallerySite()
 # repr(ags)
 ags.geneGalleryAndIndex()
+ags.listVariables()

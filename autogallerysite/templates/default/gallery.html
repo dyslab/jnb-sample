@@ -1,0 +1,54 @@
+{% extends "default/layout.html" %}
+
+{% block content %}
+	<div class="row mt-5">
+		<div class="col">
+			<a class="text-primary" href="{{ indexUrl }}">⬆️ Back To Index Page</a>
+		</div>
+	</div>
+	<div class="row justify-content-center mt-3" id="demo">
+		<div class="col-12 data-container"></div>
+	</div>
+	<div class="row mt-3 mb-5">
+		<div class="col">
+			<a class="text-primary" href="{{ indexUrl }}">⬆️ Back To Index Page</a>
+		</div>
+	</div>
+{% endblock %}
+
+{% block footscript %}
+	<script>
+	$(window).ready(function() {
+		var imgBaseUrl = '{{ imgBaseUrl }}';
+		var imgBaseUri = '{{ imgBaseUri }}';
+		var imgPath = '{{ imgPath }}';
+		var imgCount = {{ imgCount }};
+
+		var template = function(data) {
+			var html = '<ul class="list-unstyled">';
+			$.each(data, function(index, item) {
+				var prefixImgPath = imgBaseUri;
+				if (imgBaseUrl !== '') prefixImgPath = imgBaseUrl;
+				html += '<li class="list-item border mt-1 text-center">';
+				html += `<a href="${prefixImgPath}/${imgPath}/${item}" target="_blank">`;
+				html += `<img class="img-fluid" src="${prefixImgPath}/${imgPath}/${item}">`;
+				html += '</a></li>';
+			});
+			html += '</ul>';
+			return html;
+		};
+
+		$('#demo').pagination({
+			dataSource: {{ imgList | safe }},
+			pageSize: 10,
+			showNavigator: true,
+			formatNavigator: 'Total <span class="text-info h5"><%= totalNumber %></span> Picture(s)',
+			callback: function(data, pagination) {
+				var dataContainer = $(".data-container");
+				var html = template(data);
+			dataContainer.html(html);
+			}
+		})
+	});
+	</script>
+{% endblock %}

@@ -6,20 +6,17 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>{{ title }}</title>
-        <meta name="description" content="Auto Gallery Template">
+        <meta name="description" content="{{ title }}">
         <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
         <!-- Front End Framework: JQuery / Bootstrap -->
         <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
         <link href="https://cdn.bootcss.com/paginationjs/2.1.4/pagination.css" rel="stylesheet">
+        {% block head %}{% endblock %}
     </head>
     <body class="d-flex flex-column h-100">
         <main role="main" class="flex-shrink-0">
             <div class="container">
-                <div class="row justify-content-center mt-5" id="headline">
-                    <span class="text-info h3">{{ title }}</span>
-                </div>
-                <div class="row data-container mt-3 content-min-height"></div>
-                <div class="row justify-content-center my-5" id="demo"></div>
+                {% block content %}{% endblock %}
             </div>
         </main>
 		<footer class="bg-dark mt-auto py-3">
@@ -32,36 +29,7 @@
 <script src="https://cdn.bootcss.com/popper.js/1.15.0/esm/popper.min.js"></script>
 <script src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://cdn.bootcss.com/paginationjs/2.1.4/pagination.min.js"></script>
-<script>
-$(window).ready(function() {
-    var galleryPage = '{{ galleryPage }}';
-    var galleryImage = '{{ galleryImage }}';
-
-    var template = function(data) {
-        var html = '';
-        $.each(data, function(index, item) {
-            var galleryImagePath = item.replace(galleryPage, galleryImage);
-            html += '<div class="col-6 col-md-3 col-lg-2 text-center p-1">';
-            html += `<a href="${item}">`;
-            html += `<img class="img-fluid" src="${galleryImagePath}">`;
-            html += `<p>${item}</p>`;
-            html += '</a></div>';
-        });
-        return html;
-    };
-    $('#demo').pagination({
-        dataSource: {{ galleryList | safe }},
-        pageSize: 24,
-		showNavigator: true,
-		formatNavigator: 'Total <span class="text-info h5"><%= totalNumber %></span> Gallery(s)',
-        callback: function(data, pagination) {
-            var dataContainer = $(".data-container");
-            var html = template(data);
-            dataContainer.html(html);
-        }
-    })
-});
-</script>
+{% block footscript %}{% endblock %}
 <!-- Scripts end   -->
     </body>
 </html>
