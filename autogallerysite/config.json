@@ -1,4 +1,5 @@
 {
     "gallery_path":         "./_site/gallery",
+    "gallery_url":          "",
     "output_html_path":     "./_site/_htmls"
 }
