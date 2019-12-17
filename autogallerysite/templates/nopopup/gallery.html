@@ -1,4 +1,4 @@
-{% extends "s1/layout.html" %}
+{% extends "nopopup/layout.html" %}
 
 {% block title %}图库{% endblock %}
 
@@ -64,7 +64,6 @@
 
 		$(".back-to-index").click(function () {
 			window.location.href = `${indexUrl}#${pageNum}`;
-			alert(window.location.href);
 		});
 	});
 	</script>

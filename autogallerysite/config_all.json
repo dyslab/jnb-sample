@@ -1,0 +1,12 @@
+{
+    "gallery_path": "./_site/gallery",
+    "output_html_path": "./_site/_htmls",
+
+    "gallery_url": "",
+
+    "template_index_page": "default/index.html",
+    "template_gallery_page": "default/gallery.html",
+
+    "thumb_image_width": 225,
+    "thumb_image_height": 300
+}
