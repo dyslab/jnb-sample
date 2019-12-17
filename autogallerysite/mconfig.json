@@ -1,0 +1,10 @@
+{
+    "gallery_path": "./_site/gallery",
+    "output_html_path": "./_site/_mhtmls",
+
+    "template_index_page": "default/index.html",
+    "template_gallery_page": "default/gallery.html",
+
+    "index_items_per_page": 24,
+    "gallery_items_per_page": 2
+}

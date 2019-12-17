@@ -1,12 +1,24 @@
-{% extends "default/layout.html" %}
+{% extends "s1/layout.html" %}
 
 {% block title %}图库目录{% endblock %}
 
 {% block description %}图库目录索引页面模板文件{% endblock %}
 
+{% block head %}
+    <style>
+        .title-shadow {
+            color: #38c;
+            text-shadow: 1px 1px 1px #ccc;
+        }
+        .img-box-shadow:hover {
+            box-shadow: 2px 2px 2px #666;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
     <div class="row justify-content-center mt-5" id="headline">
-        <span class="text-info h3">图库目录</span>
+        <span class="h3 title-shadow">图 库 目 录</span>
     </div>
     <div class="row data-container mt-3"></div>
     <div class="row justify-content-center my-5" id="demo"></div>
@@ -18,27 +30,35 @@
         var galleryPage = '{{ galleryPage }}';
         var galleryImage = '{{ galleryImage }}';
 
-        var template = function(data) {
+		// Get parameter 'pageNum' from url string
+        var urlParam = decodeURI(window.location.href).match(/#[^#]*$/);
+		var pageNum = 1;
+        if (urlParam !== null && urlParam.length > 0) {
+			pageNum = parseInt(urlParam[0].replace(/#/, ''));
+		}
+
+        var template = function(data, pagination) {
             var html = '';
             $.each(data, function(index, item) {
                 var galleryImagePath = item.replace(galleryPage, galleryImage);
                 html += '<div class="col-6 col-md-3 col-lg-2 text-center p-1">';
-                html += `<a href="${item}" target="_blank">`;
-                html += `<img class="img-fluid" src="${galleryImagePath}">`;
-                html += `<p>${item}</p>`;
+                html += `<a href="${item}#${pagination.pageNumber}">`;
+                html += `<img class="img-fluid img-box-shadow" src="${galleryImagePath}">`;
+                html += `${item}`;
                 html += '</a></div>';
             });
             return html;
         };
-        
+
         $('#demo').pagination({
             dataSource: {{ galleryList | safe }},
             pageSize: 24,
+            pageNumber: pageNum,
             showNavigator: true,
             formatNavigator: 'Total <span class="text-info h5"><%= totalNumber %></span> Gallery(s)',
             callback: function(data, pagination) {
                 var dataContainer = $(".data-container");
-                var html = template(data);
+                var html = template(data, pagination);
                 dataContainer.html(html);
             }
         })

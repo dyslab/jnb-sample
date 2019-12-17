@@ -1,0 +1,29 @@
+{% extends "default/layout.html" %}
+
+{% block title %}图库{% endblock %}
+
+{% block description %}图库多页面模板文件{% endblock %}
+
+{% block content %}
+	<div class="row justify-content-center mt-5">
+		<div class="col-12">
+			<p>{{ imgBaseUrl }}</p>
+			<p>{{ imgBaseUri }}</p>
+			<p>{{ imgPath }}</p>
+			<p>{{ indexUrl }}</p>
+			<p>{{ pageName }}</p>
+			<p>{{ pageExt }}</p>
+			<p>{{ currentPage }}</p>
+			<p>{{ totalPages }}</p>
+			<p>{{ contentList }}</p>
+			<p>{{ genDatetime }}</p>
+		</div>
+	</div>
+{% endblock %}
+
+{% block footscript %}
+	<script>
+	$(window).ready(function() {
+	});
+	</script>
+{% endblock %}

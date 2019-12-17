@@ -1,0 +1,12 @@
+{
+    "gallery_path": "/media/vincento/WIN10_DATA/Linux Files/ojbk.cc",
+    "output_html_path": "/media/vincento/WIN10_DATA/Linux Files/ojbk.cc.htmls",
+
+    "gallery_url": "",
+
+    "template_index_page": "single/index.html",
+    "template_gallery_page": "single/gallery.html",
+
+    "thumb_image_width": 225,
+    "thumb_image_height": 300
+}

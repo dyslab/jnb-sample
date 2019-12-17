@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>图库</title>
-        <meta name="description" content="图库页面模板文件">
+        <meta name="description" content="图库多页面模板文件">
         <link rel="shortcut icon" href='favicon.ico' type="image/x-icon">
         <!-- Front End Framework: JQuery / Bootstrap -->
         <link href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -22,17 +22,18 @@
         <main role="main" class="flex-shrink-0">
             <div class="container">
                 
-	<div class="row mt-5">
-		<div class="col">
-			<a class="btn btn-warning" href="#" onclick="javascript:window.close();">&times; 关闭当前窗口</a>
-		</div>
-	</div>
-	<div class="row justify-content-center mt-3" id="demo">
-		<div class="col-12 data-container"></div>
-	</div>
-	<div class="row mt-3 mb-5">
-		<div class="col">
-			<a class="btn btn-warning" href="#" onclick="javascript:window.close();">&times; 关闭当前窗口</a>
+	<div class="row justify-content-center mt-5">
+		<div class="col-12">
+			<p></p>
+			<p>../../../gallery</p>
+			<p>a/a1</p>
+			<p>../../index.html</p>
+			<p>gallery</p>
+			<p>.html</p>
+			<p>1</p>
+			<p>2</p>
+			<p>[&#39;深度截图_dde-desktop_20191217211136.png&#39;, &#39;火狐截图_2019-12-15T13-23-26.892Z.png&#39;]</p>
+			<p>2019-12-18</p>
 		</div>
 	</div>
 
@@ -51,36 +52,6 @@
 
 	<script>
 	$(window).ready(function() {
-		var imgBaseUrl = '';
-		var imgBaseUri = '../../../gallery';
-		var imgPath = 'a/a1';
-		var imgCount = 3;
-
-		var template = function(data) {
-			var html = '<ul class="list-unstyled">';
-			$.each(data, function(index, item) {
-				var prefixImgPath = imgBaseUri;
-				if (imgBaseUrl !== '') prefixImgPath = imgBaseUrl;
-				html += '<li class="list-item border mt-1 text-center">';
-				html += `<a href="${prefixImgPath}/${imgPath}/${item}" target="_blank">`;
-				html += `<img class="img-fluid" src="${prefixImgPath}/${imgPath}/${item}">`;
-				html += '</a></li>';
-			});
-			html += '</ul>';
-			return html;
-		};
-
-		$('#demo').pagination({
-			dataSource: ["深度截图_dde-desktop_20191217211136.png","火狐截图_2019-12-15T13-23-26.892Z.png","火狐截图_2019-12-15T13-23-40.032Z.png"],
-			pageSize: 10,
-			showNavigator: true,
-			formatNavigator: 'Total <span class="text-info h5"><%= totalNumber %></span> Picture(s)',
-			callback: function(data, pagination) {
-				var dataContainer = $(".data-container");
-				var html = template(data);
-			dataContainer.html(html);
-			}
-		})
 	});
 	</script>
 

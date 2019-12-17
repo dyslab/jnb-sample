@@ -1,0 +1,31 @@
+{% extends "default/layout.html" %}
+
+{% block title %}图库目录{% endblock %}
+
+{% block description %}图库目录索引多页面模板文件{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center mt-5" id="headline">
+        <span class="text-info h3">图库目录</span>
+    </div>
+    <div class="row mt-3">
+        <div class="col-12">
+            <p>{{ galleryPage }}</p>
+            <p>{{ galleryImage }}</p>
+            <p>{{ pageName }}</p>
+            <p>{{ pageExt }}</p>
+            <p>{{ currentPage }}</p>
+            <p>{{ totalPages }}</p>
+            <p>{{ contentList }}</p>
+            <p>{{ genDatetime }}</p>
+        </div>
+    </div>
+    <div class="row justify-content-center my-5"></div>
+{% endblock %}
+
+{% block footscript %}
+    <script>
+    $(window).ready(function() {
+    });
+    </script>
+{% endblock %}

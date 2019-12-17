@@ -8,11 +8,11 @@
 
     Purpose: Website generator, generate html pages for gallery folder automatically.
 
-    Usage: python3 ags.py
+    Usage: python3 agsm.py
 '''
-from ags import AGS
+from ags import AGSM
 
-app = AGS()
+app = AGSM()
 app.geneGalleryAndIndex()
 # repr(app)
 # app.initConfigJsonAndTemplate()
