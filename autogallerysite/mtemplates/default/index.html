@@ -4,23 +4,62 @@
 
 {% block description %}图库目录索引多页面模板文件{% endblock %}
 
+{% block head %}
+    <style>
+        .title-shadow {
+            color: #187;
+            text-shadow: 1px 1px 1px #aaa;
+        }
+        .img-box-shadow:hover {
+            box-shadow: 2px 2px 2px #666;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
-    <div class="row justify-content-center mt-5" id="headline">
-        <span class="text-info h3">图库目录</span>
+    <div class="row justify-content-between mt-5 px-3" id="headline">
+        <span class="h3 title-shadow">图库目录</span>
+        <span class="text-secondary font-italic">{{ totalItems }}个图库</span>
     </div>
     <div class="row mt-3">
-        <div class="col-12">
-            <p>{{ galleryPage }}</p>
-            <p>{{ galleryImage }}</p>
-            <p>{{ pageName }}</p>
-            <p>{{ pageExt }}</p>
-            <p>{{ currentPage }}</p>
-            <p>{{ totalPages }}</p>
-            <p>{{ contentList }}</p>
-            <p>{{ genDatetime }}</p>
+    {% for item in contentList %}
+        {% set gPathSeq = item.split('/') %}
+        {% set iconPath = gPathSeq[0:-1] | join('/') %}
+        <div class="col-6 col-md-3 col-lg-2 text-center px-2 py-1">
+            <a href="{{ item }}#{{ currentPage }}">
+                <img class="img-fluid img-box-shadow" src="{{ iconPath }}/{{ galleryImage }}">
+                <p>{{ item }}</p>
+            </a>
         </div>
+    {% endfor %}
     </div>
-    <div class="row justify-content-center my-5"></div>
+    {% if totalPages > 1 %}
+        {% set showStartPageNo = currentPage - 3 %}
+        {% set showEndPageNo = currentPage + 3 %}
+        {% if showStartPageNo < 1 %} {% set showStartPageNo = 1 %} {% endif %}
+        {% if showEndPageNo > totalPages %}{% set showEndPageNo = totalPages %}{% endif %}
+        <nav class="my-5">
+            <ul class="pagination justify-content-center">
+            {% if showStartPageNo > 1 %}
+                <li class="page-item"><a class="page-link" href="{{ pageName }}{{ pageExt }}">⏮️</a></li>
+            {% endif %}
+            {% for pno in range(showStartPageNo,showEndPageNo+1) %}
+                {% if pno > 1 %}
+                    <li class="page-item{% if pno == currentPage %} active{% endif %}">
+                        <a class="page-link" href="{{ pageName }}_{{ pno }}{{ pageExt }}">{{ pno }}</a>
+                    </li>
+                {% else %}
+                    <li class="page-item{% if pno == currentPage %} active{% endif %}">
+                        <a class="page-link" href="{{ pageName }}{{ pageExt }}">{{ pno }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            {% if totalPages > showEndPageNo %}
+                <li class="page-item"><a class="page-link" href="{{ pageName }}_{{ totalPages }}{{ pageExt }}">⏭️</a></li>
+            {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
 {% endblock %}
 
 {% block footscript %}

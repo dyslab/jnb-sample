@@ -138,6 +138,7 @@ class AutoGallerySiteMultiplePages(AutoGallerySite):
                     'currentPage': p,
                     'totalPages': totalPages,
                     'contentList': pageItemList,
+                    'totalItems': gCtx['imgCount'],
                     'genDatetime': datetime.date.today()
                 }).dump(dPath)
                 self.log('Generated html file [{}]'.format(
@@ -181,6 +182,7 @@ class AutoGallerySiteMultiplePages(AutoGallerySite):
                     'currentPage': p,
                     'totalPages': totalPages,
                     'contentList': pageItemList,
+                    'totalItems': iCtx['galleryCount'],
                     'genDatetime': datetime.date.today()
                 }).dump(dPath)
                 self.log('Generated html file [{}]'.format(

@@ -4,26 +4,97 @@
 
 {% block description %}图库多页面模板文件{% endblock %}
 
+{% block head %}
+    <style>
+        .title-shadow {
+            color: #187;
+            text-shadow: 1px 1px 1px #aaa;
+        }
+    </style>
+{% endblock %}
+
 {% block content %}
-	<div class="row justify-content-center mt-5">
-		<div class="col-12">
-			<p>{{ imgBaseUrl }}</p>
-			<p>{{ imgBaseUri }}</p>
-			<p>{{ imgPath }}</p>
-			<p>{{ indexUrl }}</p>
-			<p>{{ pageName }}</p>
-			<p>{{ pageExt }}</p>
-			<p>{{ currentPage }}</p>
-			<p>{{ totalPages }}</p>
-			<p>{{ contentList }}</p>
-			<p>{{ genDatetime }}</p>
+    <div class="row justify-content-between mt-5 px-3" id="headline">
+        <span class="h3 title-shadow">{{ imgPath }}</span>
+        <span class="text-secondary font-italic">{{ totalItems }}幅图片</span>
+    </div>
+	<div class="row mt-3">
+		<div class="col text-right">
+			<a href="#" class="btn btn-dark back-to-index">返回目录页 👈</a>
 		</div>
 	</div>
+	{% set prefixImgPath = imgBaseUri %}
+	{% if imgBaseUrl != '' %}{% set prefixImgPath = imgBaseUrl %}{% endif %}
+	<div class="row justify-content-center mt-3">
+		<div class="col-12">
+			<ul class="list-unstyled">
+			{% for item in contentList %}
+				<li class="list-item border mt-1 text-center">
+					<a href="{{ prefixImgPath }}/{{ imgPath }}/{{ item }}" target="_blank">
+						<img class="img-fluid" src="{{ prefixImgPath }}/{{ imgPath }}/{{ item }}">
+					</a>
+				</li>
+			{% endfor %}
+			</ul>
+		</div>
+	</div>
+	<div class="row mt-3 mb-5">
+		<div class="col text-right">
+			<a href="#" class="btn btn-dark back-to-index">返回目录页 👈</a>
+		</div>
+	</div>
+    {% if totalPages > 1 %}
+        {% set showStartPageNo = currentPage - 3 %}
+        {% set showEndPageNo = currentPage + 3 %}
+        {% if showStartPageNo < 1 %} {% set showStartPageNo = 1 %} {% endif %}
+        {% if showEndPageNo > totalPages %}{% set showEndPageNo = totalPages %}{% endif %}
+        <nav class="mb-5">
+            <ul class="pagination justify-content-center">
+            {% if showStartPageNo > 1 %}
+                <li class="page-item"><a class="page-link" href="#" alt="{{ pageName }}{{ pageExt }}">⏮️</a></li>
+            {% endif %}
+            {% for pno in range(1,totalPages+1) %}
+                {% if pno > 1 %}
+                    <li class="page-item{% if pno == currentPage %} active{% endif %}">
+                        <a class="page-link" href="#" alt="{{ pageName }}_{{ pno }}{{ pageExt }}">{{ pno }}</a>
+                    </li>
+                {% else %}
+                    <li class="page-item{% if pno == currentPage %} active{% endif %}">
+                        <a class="page-link" href="#" alt="{{ pageName }}{{ pageExt }}">{{ pno }}</a>
+                    </li>
+                {% endif %}
+            {% endfor %}
+            {% if totalPages > showEndPageNo %}
+                <li class="page-item"><a class="page-link" href="#" alt="{{ pageName }}_{{ totalPages }}{{ pageExt }}">⏭️</a></li>
+            {% endif %}
+            </ul>
+        </nav>
+    {% endif %}
 {% endblock %}
 
 {% block footscript %}
 	<script>
 	$(window).ready(function() {
+		var indexUrl = "{{ indexUrl }}";
+		// Get parameter 'pageNum' from url string
+        var urlParam = decodeURI(window.location.href).match(/#[^#]*$/);
+		var pageNum = 1;
+        if (urlParam !== null && urlParam.length > 0) {
+			pageNum = parseInt(urlParam[0].replace(/#/, ""));
+		}
+		//  Manipulate the destination index url
+		var sExt = indexUrl.match(/\.[^\.]+$/);
+		var sPageNum = "";
+		if (pageNum > 1) sPageNum = `_${pageNum}`;
+		var indexPageNumUrl = indexUrl.replace(/\.[^\.]+$/, `${sPageNum}${sExt}`)
+
+		$(".page-link").click(function () {
+			window.location.href = `${$(this).attr("alt")}#${pageNum}`;
+		});
+
+		$(".back-to-index").click(function () {
+			window.location.href = indexPageNumUrl;
+		});
 	});
 	</script>
 {% endblock %}
