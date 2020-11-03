@@ -33,7 +33,8 @@
 4. **添加一个新的单元格，输入并运行如下代码：**
 
     ```Python
-    plt.rcParams['font.sans-serif'] = ['CESI_FS_GB2312']    # Fix Chinese unrecognized issue 
+    plt.rcParams['font.family'] = ['CESI_FS_GB2312']        # Set font family to Chinese
+    plt.rcParams['font.sans-serif'] = ['CESI_FS_GB2312']    # Set default font type to Chinese
     plt.rcParams['font.size'] = 14.0                        # default value changes to 14
     plt.rcParams['axes.unicode_minus'] = False              # Fix Minus Sign unrecognized issue
     ```
