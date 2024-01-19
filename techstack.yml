@@ -1,0 +1,891 @@
+repo_name: dyslab/jnb-sample
+report_id: c197a8b15349c04387ed7edd61d1b0d7
+version: 0.1
+repo_type: Public
+timestamp: '2024-01-19T03:52:36+00:00'
+requested_by: dyslab
+provider: github
+branch: master
+detected_tools_count: 65
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/dyslab/jnb-sample
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source_url: https://github.com/dyslab/jnb-sample
+  detection_source: Repo Metadata
+- name: Jinja
+  description: Full featured template engine for Python
+  website_url: https://palletsprojects.com/p/jinja/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/service/2303/New_Project__20_.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-03-20 02:15:28.000000000 Z
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source_url: https://github.com/dyslab/jnb-sample
+  detection_source: Repo Metadata
+- name: Matplotlib
+  description: A plotting library for the Python programming language
+  website_url: http://matplotlib.org
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Charting Libraries
+  image_url: https://img.stackshare.io/service/2993/2DZC4KaA_400x400.jpg
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/dyslab/jnb-sample
+  detection_source: Repo Metadata
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: Pandoc
+  description: A universal document converter
+  website_url: https://pandoc.org/
+  open_source: true
+  hosted_saas: false
+  category: Assets and Media
+  sub_category: File Conversion
+  image_url: https://img.stackshare.io/service/2330/no-img-open-source.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: Pillow
+  description: Python Imaging Library
+  website_url: https://python-pillow.github.io/
+  open_source: true
+  hosted_saas: false
+  category: Assets and Media
+  sub_category: Image Processing and Management
+  image_url: https://img.stackshare.io/service/2375/default_1f67b0ca7416a9f52beb655f90b5602d5ef74b75.jpg
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: vincento
+  last_updated_on: 2020-07-08 09:14:28.000000000 Z
+- name: IPython
+  description: A command shell for interactive computing in multiple programming languages
+  website_url: http://ipython.org/index.html
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Shells
+  image_url: https://img.stackshare.io/service/4477/820a0bb9a44fe5a1d640993ab1e6fd84_400x400.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:58:30.000000000 Z
+- name: Jupyter
+  description: Multi-language interactive computing environments.
+  website_url: http://jupyter.org
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Application Utilities
+  sub_category: Data Science Notebooks
+  image_url: https://img.stackshare.io/service/4190/fGBUdNf__400x400.jpg
+  detection_source_url: https://github.com/dyslab/jnb-sample
+  detection_source: Repo Metadata
+- name: NumPy
+  description: Fundamental package for scientific computing with Python
+  website_url: http://www.numpy.org/
+  version: 1.22.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Data Science Tools
+  image_url: https://img.stackshare.io/service/2179/default_332f874a2edb2686f578aa6389313efcea1eec41.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source_url: https://github.com/dyslab/jnb-sample
+  detection_source: Repo Metadata
+- name: MarkupSafe
+  description: Safely add untrusted strings to HTML/XML markup
+  package_url: https://pypi.org/project/MarkupSafe
+  version: 1.1.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19945/default_0b0a94e1bdf3e64deeccb23892ca2335bdc30e4f.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: PyYAML
+  description: YAML parser and emitter for Python
+  package_url: https://pypi.org/project/PyYAML
+  version: '5.4'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19829/default_74a61b43bdb9fc0cba2978316b9976f43545029b.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-03-25 23:10:33.000000000 Z
+- name: Pygments
+  description: Pygments is a syntax highlighting package written in Python
+  package_url: https://pypi.org/project/Pygments
+  version: 2.15.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19858/default_4d761b2257a1435539d6dc92346974d9f1d55c70.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:56:41.000000000 Z
+- name: Send2Trash
+  description: Send file to trash natively under Mac OS X
+  package_url: https://pypi.org/project/Send2Trash
+  version: 1.5.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20395/default_5d8ceeeb4f37c8c5984e00abce1dab5113e27b56.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: attrs
+  description: Classes Without Boilerplate
+  package_url: https://pypi.org/project/attrs
+  version: 19.3.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19857/default_4a8a8fdc10130068bf295812b98e9b72fb42fe70.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: autopep8
+  description: A tool that automatically formats Python code to conform to the PEP
+    8 style guide
+  package_url: https://pypi.org/project/autopep8
+  version: 1.4.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20353/default_4fff53bc8c15a9ea5decdac96fdba9b8874b07ce.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: backcall
+  description: Specifications for callback functions passed in to an API
+  package_url: https://pypi.org/project/backcall
+  version: 0.1.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: bleach
+  description: An easy safelist-based HTML-sanitizing tool
+  package_url: https://pypi.org/project/bleach
+  version: 3.3.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20045/default_b0b684477aefb2da4c92a4bafd91d26e16511cd1.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2021-02-02 22:17:46.000000000 Z
+- name: decorator
+  description: Decorators for Humans
+  package_url: https://pypi.org/project/decorator
+  version: 4.4.1
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19911/default_bc82f0b22ca8fd942e21c317967f4ab61f43eb2c.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: defusedxml
+  description: XML bomb protection for Python stdlib modules
+  package_url: https://pypi.org/project/defusedxml
+  version: 0.6.0
+  license: Python-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20210/default_6796c4086c025d18cdc673750b208b846d8e0914.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: entrypoints
+  description: Discover and load entry points from installed packages
+  package_url: https://pypi.org/project/entrypoints
+  version: '0.3'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20424/default_6d9e48c73a51a5ed50a36bba10e7dc73dd24c660.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: importlib-metadata
+  description: Read metadata from Python packages
+  package_url: https://pypi.org/project/importlib-metadata
+  version: '0.23'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20000/default_7c419d5d5f0cfad7886b95266eae7ba305cedacf.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: ipykernel
+  description: IPython Kernel for Jupyter
+  package_url: https://pypi.org/project/ipykernel
+  version: 5.1.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20282/default_23dd4b159eaa2c5b085470b39bf396fcc6cf2c38.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: ipyleaflet
+  description: A Jupyter widget for dynamic Leaflet maps
+  package_url: https://pypi.org/project/ipyleaflet
+  version: 0.11.4
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: ipywidgets
+  description: IPython HTML widgets for Jupyter
+  package_url: https://pypi.org/project/ipywidgets
+  version: 7.5.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: jedi
+  description: An autocompletion tool for Python that can be used for text editors
+  package_url: https://pypi.org/project/jedi
+  version: 0.15.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20260/default_9a53068260c70b2274df0967716480e7e3f74b0d.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: jsonschema
+  description: An implementation of JSON Schema validation for Python
+  package_url: https://pypi.org/project/jsonschema
+  version: 3.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19854/default_3fbfa1d88b4408e903227ac391490e8efb8dea58.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: jupyter-client
+  description: Jupyter protocol implementation and client libraries
+  package_url: https://pypi.org/project/jupyter-client
+  version: 5.3.4
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20352/default_f465c24287ef1189cebf97fef20e50d0bbc5623d.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:56:22.000000000 Z
+- name: jupyter-core
+  description: Jupyter core package
+  package_url: https://pypi.org/project/jupyter-core
+  version: 4.11.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20703/default_49f208ff144f55afc8c1c08f01bcb1eef2f5bb23.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:56:22.000000000 Z
+- name: kiwisolver
+  description: A fast implementation of the Cassowary constraint solver
+  package_url: https://pypi.org/project/kiwisolver
+  version: 1.1.0
+  license: Other
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20772/default_b92e3d801a6b8cc7a378e4f7c25f52a138a86391.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: lxml
+  description: Powerful and Pythonic XML processing library combining libxml2/libxslt
+    with the ElementTree API
+  package_url: https://pypi.org/project/lxml
+  version: 4.9.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19835/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-07-06 20:23:00.000000000 Z
+- name: mistune
+  description: The fastest markdown parser in pure Python
+  package_url: https://pypi.org/project/mistune
+  version: 2.0.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20077/default_1b6ee2407cdedc6ad8878ee707164428880e399a.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-07-29 22:58:49.000000000 Z
+- name: more-itertools
+  description: More routines for operating on iterables, beyond itertools
+  package_url: https://pypi.org/project/more-itertools
+  version: 7.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19947/default_0b0a94e1bdf3e64deeccb23892ca2335bdc30e4f.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: nbconvert
+  description: Converting Jupyter Notebooks
+  package_url: https://pypi.org/project/nbconvert
+  version: 6.5.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20059/default_07febc56eb57b6d4c91eb3ad11874d5d88882ab0.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-08-23 17:58:02.000000000 Z
+- name: nbformat
+  description: The Jupyter Notebook format
+  package_url: https://pypi.org/project/nbformat
+  version: 4.4.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20035/default_a3692729f5b4ca7eb94218522ed4260bba4a5c15.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: notebook
+  description: A web-based notebook environment for interactive computing
+  package_url: https://pypi.org/project/notebook
+  version: 6.4.12
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20024/default_fd02050783f95269bfcc5c4d11f1c75dd423cd1d.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2022-06-16 23:34:34.000000000 Z
+- name: pandas
+  description: Powerful data structures for data analysis
+  package_url: https://pypi.org/project/pandas
+  version: 0.25.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19837/default_85689b353a3a9409328e253ea28d859d29151e0c.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pandocfilters
+  description: Utilities for writing pandoc filters in python
+  package_url: https://pypi.org/project/pandocfilters
+  version: 1.4.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20528/default_1977a1f74deaf220f3f454ab642f7526a744ed5f.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: parso
+  description: A Python Parser
+  package_url: https://pypi.org/project/parso
+  version: 0.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20216/default_d4dd0466552a9776ca8535b869e22a3362790c94.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pexpect
+  description: Pexpect allows easy control of interactive console applications
+  package_url: https://pypi.org/project/pexpect
+  version: 4.7.0
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20078/default_1b6ee2407cdedc6ad8878ee707164428880e399a.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pickleshare
+  description: Tiny 'shelve'-like database with concurrency support
+  package_url: https://pypi.org/project/pickleshare
+  version: 0.7.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20603/default_705055e61b43e314c99bd16582ed1fac9638127e.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: prompt-toolkit
+  description: Library for building powerful interactive command lines in Python
+  package_url: https://pypi.org/project/prompt-toolkit
+  version: 2.0.10
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20821/default_807bb6c1af3ee7076c92bf3b4deb3e13b204d369.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: ptyprocess
+  description: Run a subprocess in a pseudo terminal
+  package_url: https://pypi.org/project/ptyprocess
+  version: 0.6.0
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20391/default_ec7f908dc4ac3533950df7d8e371292c0bdc3812.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pycodestyle
+  description: Python style guide checker
+  package_url: https://pypi.org/project/pycodestyle
+  version: 2.5.0
+  license: Saxpath
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20145/default_a55249b25c76872ebbee6b173a63c5fce36136f9.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pyecharts
+  description: Python options, make charting easier
+  package_url: https://pypi.org/project/pyecharts
+  version: 1.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20748/default_0f5986a8703a98062d3c15b09649921082c25266.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pyparsing
+  description: Python parsing module
+  package_url: https://pypi.org/project/pyparsing
+  version: 2.4.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19881/default_2270bfab784e3d2c2d999d26b11ee478a9dad238.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pyrsistent
+  description: Persistent/Functional/Immutable data structures
+  package_url: https://pypi.org/project/pyrsistent
+  version: 0.15.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20112/default_07c33e3fe9188a5efef46b09a8d6468a52dce7cb.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: python-dateutil
+  description: Extensions to the standard Python datetime module
+  package_url: https://pypi.org/project/python-dateutil
+  version: 2.8.1
+  license: NRL
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19833/default_58dbe7b4d7ec447b62773209af0f9a31bbabf5bd.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:58:30.000000000 Z
+- name: pytz
+  description: World timezone definitions, modern and historical
+  package_url: https://pypi.org/project/pytz
+  version: '2019.3'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19841/default_bb711fa267b2329ed689711a5adb7d9e74610b20.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: pyzmq
+  description: Python bindings for 0MQ
+  package_url: https://pypi.org/project/pyzmq
+  version: 18.1.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19913/default_37434feaacace26053e41d6e4802560af16ebe44.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: qtconsole
+  description: Jupyter Qt console
+  package_url: https://pypi.org/project/qtconsole
+  version: 4.6.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: simplejson
+  description: Simple, fast, extensible JSON encoder/decoder for Python
+  package_url: https://pypi.org/project/simplejson
+  version: 3.16.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19859/default_4a8a8fdc10130068bf295812b98e9b72fb42fe70.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: six
+  description: Python 2 and 3 compatibility utilities
+  package_url: https://pypi.org/project/six
+  version: 1.13.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19827/default_74a61b43bdb9fc0cba2978316b9976f43545029b.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: terminado
+  description: Terminals served to xterm.js using Tornado websockets
+  package_url: https://pypi.org/project/terminado
+  version: 0.8.3
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20664/default_7a811a73f70dc50b94351ae6cb030cc7b1540ea6.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:56:04.000000000 Z
+- name: testpath
+  description: Test utilities for code working with files and commands
+  package_url: https://pypi.org/project/testpath
+  version: 0.4.4
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/pypi/image.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: tornado
+  description: Tornado is a Python web framework and asynchronous networking library
+  package_url: https://pypi.org/project/tornado
+  version: 6.3.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19860/default_4a8a8fdc10130068bf295812b98e9b72fb42fe70.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dependabot[bot]
+  last_updated_on: 2024-01-08 08:56:04.000000000 Z
+- name: traitlets
+  description: Traitlets Python config system
+  package_url: https://pypi.org/project/traitlets
+  version: 4.3.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20029/default_73018c8841403fdd7d8f629d056cba8f938c5589.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: wcwidth
+  description: Measures number of Terminal column cells of wide-character codes
+  package_url: https://pypi.org/project/wcwidth
+  version: 0.1.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20026/default_77bb3e5ea95c1543fd636eba30e7257b80fbd4f6.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: webencodings
+  description: Character encoding aliases for legacy web content
+  package_url: https://pypi.org/project/webencodings
+  version: 0.5.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20327/default_1342a7e78c3c34f58715077849cd487ffddd263d.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: xarray
+  description: N-D labeled arrays and datasets in Python
+  package_url: https://pypi.org/project/xarray
+  version: 0.13.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20331/default_cf6b540611cb9b9b5d016a661f54f50ad3400f1a.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: xlrd
+  description: Library for developers to extract data from Microsoft Excel
+  package_url: https://pypi.org/project/xlrd
+  version: 1.2.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20182/default_3d320a0aa731f16ceb0e7b6999ca7f7cd784aee2.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
+- name: zipp
+  description: Backport of pathlib-compatible object wrapper for zip files
+  package_url: https://pypi.org/project/zipp
+  version: 0.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20247/default_47b8ee8db82e43d9eef35923435bd8cc855f3a1b.png
+  detection_source_url: https://github.com/dyslab/jnb-sample/blob/master/requirements.txt
+  detection_source: requirements.txt
+  last_updated_by: dyslab
+  last_updated_on: 2019-11-27 08:50:45.000000000 Z
