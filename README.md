@@ -1,99 +1,94 @@
-# jnb-sample
+# jnb-sample: A Miscellany Of Jupyter Notebook Learning 🔊 
 
-Jupyter Notebook Learning Samples Project. 🔊 
+[![Powered by Jupyter notebook v6.5](./imgs/powered-by-notebook-v6.svg)](https://jupyter.org/) &nbsp;&nbsp;[![My Stackshare](./imgs/stackshare-dyslab.svg)](https://stackshare.io/dyslab)
 
-[![StackShare](http://img.shields.io/badge/tech-stack-0690fa.svg?style=flat)](https://stackshare.io/dyslab/my-stack)
+## Prerequisites
 
-## The prerequisites of the project running:
+1. Python3 venv environment (v3.6 or above)
 
-1. Python venv environment (version 3.6 or above).
+2. Jupyter Notebook v6.4 or v6.5
 
-2. Jupyter Notebook. 
+3. Conda with BeakerX
 
-3.  Conda & BeakerX. (the environment for BeakerX app test)
-
-
----
-
-
-## Installation Guide For Venv Mode:
+## Venv mode creation
 
 1. Create the **working directory**. (named it as you wish)
 
 2. Run the following command line in **working directory** to create a new Python 'venv' environment. 
 
-    ```
-    $ python3 -m venv venv
-    ```
+```
+$ python3 -m venv venv
+```
 
-## App Running Steps: (Venv  Mode)
+## Install packages list in venv mode
 
-1. Jump into the **working directory**.
+```bash
+# Activate venv mode in current folder
+. venv/bin/activate
 
-2. Run the following command lines.
+# Install packages for this project in venv mode
+pip install -r requirements.txt
 
-    ```bash
-    $ . venv/bin/activate
-    (venv) $ jupyter notebook
-    ```
+# BTW: Exporting `requirements.txt` by CLI `pip freeze > requirements.txt`
+```
 
-    or using below shell script.
+## Running app in venv mode
 
-    ```bash
-    $ ./nbstart
-    ```
-    *(note: run the command line **`chmod a+x ./nbstart`** before running above shell script)*
+```bash
+# Start notebook in venv mode under current (working) folder.
+jupyter notebook # Command prompt added a prefix '(venv)'
 
-3. Installed modules via **pip**:
+# Or use shell script file below. Type `chmod a+x ./nbstart` at first to make the file executable
+./nbstart
+```
 
-    - IPython
+## Main module list:
 
-    - Jupyter
+- Jupyter
 
-    - jupyter-contrib-nbextensions (note: command line `$ jupyter contrib nbextension install --user` enable notebook extensions)
+- IPython
 
-    - Pandas (along with `numpy`)
+- jupyter-contrib-nbextensions
 
-    - xlrd
+```bash
+# Remember to make the extensions enable
+jupyter contrib nbextension install --user
+```
 
-    - matplotlib
+- Pandas (along with numpy)
 
-    - Pillow
+- xlrd
 
-    - pyecharts
+- matplotlib
 
-    - ipyleaflet
+- Pillow
 
-    - autopep8
+- pyecharts
 
-4. All packages list (venv mode): See [requirements.txt](requirements.txt)
+- ipyleaflet
 
-    Then, you were able to install the prerequisite packages by CLI `pip install -U -r requirements.txt` in your virtual environment. (BTW: Exporting requirements.txt by CLI `pip freeze > requirements.txt`)
+- autopep8
 
-
----
-
+Check out [requirements.txt](requirements.txt) for more details.
 
 ## Notice For BeakerX App Launching.
 
 1. BeakerX is basing on conda environment . Check out [Conda](https://www.anaconda.com/distribution/) and [BeakerX ](http://beakerx.com/documentation) for more details about their installations.
 
-    ```bash
-    (base) $ beakerx
-    ```
+```bash
+(base) $ beakerx
+```
 
 2. All BeakerX samples saved in the folder `./beakerx_samples/`.
 
 3. Packages list (conda mode): See [pip_list_beakerx.txt](pip_list_beakerx.txt)
 
-PS: It seems there's certain conflict existed in my jupyter/nbextensions configuration between my venv mode and conda mode, it's not a big problem though, ok to work.
-
+Note: It seems that certain conflicts existed in my jupyter / nbextensions configuration between venv mode and conda mode. It's not a big deal though, still fine to work.
 
 ---
 
+__*Project history*__
 
-Document Information:
+*· Last modified date: 19 Jan 2024*
 
-- *Last modified on 27 Nov 2019.*
-
-- *Created on 28 May 2019.*
+*· Project creation date: 28 May 2019*

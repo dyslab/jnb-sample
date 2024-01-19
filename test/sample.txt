@@ -1,7 +1,1 @@
 Greets from "sample.txt".
-来自 "sample.txt" 的问候。
-
-123     456     789
-壹贰叁　abc 科技树
-
-

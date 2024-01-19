@@ -1,8 +1,0 @@
-Order ID,Order date,Return request date,Return request status,Amazon RMA ID,Merchant RMA ID,Label type,Label cost,Currency code,Return carrier,Tracking ID,Label to be paid by,A to z claim,Is prime,Merchant SKU,Return quantity,Return reason,In policy,Return type,Resolution,Invoice number,Return delivery date,Order amount,Order quantity,SafeT action reason,SafeT claim id,SafeT claim state,SafeT claim creation time,SafeT claim reimbursement amount,Refunded amount,Category
-114-2027945-1173022,11-Oct-19,30-Oct-19,Closed, , , , , , , ,Customer,N,N,HM0725-2737,1,AMZ-PG-APP-TOO-SMALL,Y,C-Returns,StandardRefund, , ,16.41,1, , , , , ,17.77, 
-114-2027945-1173022,11-Oct-19,30-Oct-19,Closed, , , , , , , ,Customer,N,N,HM0725-2737,1,AMZ-PG-APP-TOO-SMALL,Y,C-Returns,StandardRefund, , ,16.41,1, , , , , , , 
-114-6921854-7604240,21-Oct-19,22-Oct-19,Closed, , , , , , , ,Customer,N,N,HM0801-740,1,CR-UNWANTED_ITEM,Y,C-Returns,StandardRefund, , ,14.71,1, , , , , ,15.99, 
-114-6898014-8364232,6-Sep-19,21-Oct-19,PendingApproval, , , , , , , ,Customer,N,N,HM0738-C-39,1,CR-UNWANTED_ITEM,Y,C-Returns,StandardRefund, , ,13.19,1, , , , , , , 
-113-2235021-7204201,19-Aug-19,13-Oct-19,PendingApproval, , , , , , , ,Customer,N,N,HM0731-H-41,1,AMZ-PG-APP-TOO-SMALL,N,C-Returns,StandardRefund, , ,16.99,1, , , , , , , 
-113-1675796-2913019,21-Sep-19,8-Oct-19,Closed, , , , , , , ,Customer,N,N,HM0803-1246,1,CR-ORDERED_WRONG_ITEM,Y,C-Returns,StandardRefund, , ,15.99,1, , , , , ,8, 
-112-1027912-6517869,19-Sep-19,8-Oct-19,Closed, , , , , , , ,Customer,N,N,HM0707-838,1,AMZ-PG-APP-TOO-LARGE,Y,C-Returns,StandardRefund, , ,13.99,1, , , , , ,5.6, 
