@@ -29,6 +29,10 @@ def generateOutputFilename(input_filename):
 
 
 if __name__ == '__main__':
+    # 针对 Windows 平台上的 CMD 命令行终端设置彩色字符输出
+    if os.name == 'nt':
+        os.system('color') 
+
     if len(sys.argv) > 1:
         parser = argparse.ArgumentParser()
         parser.description = 'Decode a base64 encoded file'
