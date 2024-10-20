@@ -35,6 +35,6 @@ jupyter notebook # Command prompt added a prefix '(venv)'
 
 ***Project history***
 
-· Last modified date: 7 Apr 2024
+· Last modified date: 20 Oct 2024
 
 · Project creation date: 28 May 2019
