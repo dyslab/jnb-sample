@@ -1,8 +1,8 @@
 import os
 import re
-from datetime import date
-from httpcore import URL
 import requests
+from httpcore import URL
+from datetime import date
 
 BASE_OUTPUT_DIR: str = 'output/'            # Output directory
 

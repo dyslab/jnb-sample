@@ -26,8 +26,12 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      #    cache: 'pip' # caching pip dependencies
-      # - run: python3 -m pip install --upgrade pip
+          cache: 'pip' # caching pip dependencies
+      - run: 
+      - run: |
+          python3 -m pip install --upgrade pip
+          python3 -m pip install requests
+          python3 -m pip install httpcore
       - run: python3 ${{ github.workspace }}/wallpaper/bing.py
       - uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
