@@ -11,9 +11,10 @@ def createDirIfNotExists(dir: str) -> None:
         os.makedirs(dir)
 
 def fetchBingImage() -> None:
+    BASE_URL : str = 'https://www.bing.com'
     # Send a GET request to the URL
     response: requests.Response = requests.get(
-        'https://www.bing.com', 
+        BASE_URL, 
         headers={
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36 Edg/131.0.0.0'
             }
@@ -32,6 +33,12 @@ def fetchBingImage() -> None:
             if jsonObj and jsonObj['Url']:
                 try:
                     print(f'Found image: {jsonObj["Url"]}')
+                    urlPattern : str | None = re.search(r'^http[s]?://', jsonObj["Url"])
+                    if urlPattern is None:
+                        if jsonObj["Url"].startswith('/'):
+                            jsonObj['Url'] = f'{BASE_URL}{jsonObj["Url"]}'
+                        else:
+                            jsonObj['Url'] = f'{BASE_URL}/{jsonObj["Url"]}'
                     imageFile: requests.Response = requests.get(jsonObj['Url'])
                     urlObj: URL = URL(jsonObj['Url'])
                     # Get the file name
