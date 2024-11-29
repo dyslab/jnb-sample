@@ -1,6 +1,6 @@
 # jnb-sample: A Miscellany Of Jupyter Notebook Learning 🔊
 
-[![Jupyter notebook v7](./assets/jupyter-notebook-v7.svg)](https://jupyter.org/) &nbsp;&nbsp;[![My Stackshare](./assets/stackshare-dyslab.svg)](https://stackshare.io/dyslab)
+[![Jupyter notebook v7](./assets/jupyter-notebook-v7.svg)](https://jupyter.org/) &nbsp;&nbsp;[![My Stackshare](./assets/stackshare-dyslab.svg)](https://stackshare.io/dyslab) &nbsp;&nbsp;[![.github/workflows/fetch-bing-wallpaper.yml](https://github.com/dyslab/jnb-sample/actions/workflows/fetch-bing-wallpaper.yml/badge.svg)](https://github.com/dyslab/jnb-sample/actions/workflows/fetch-bing-wallpaper.yml)
 
 ## Prerequisites
 
