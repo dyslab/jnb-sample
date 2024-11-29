@@ -4,7 +4,7 @@ import requests
 from httpcore import URL
 from datetime import date
 
-BASE_OUTPUT_DIR: str = 'output/'            # Output directory
+BASE_OUTPUT_DIR: str = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'output')  # Output directory
 
 def createDirIfNotExists(dir: str) -> None:
     if not os.path.exists(dir):
@@ -46,7 +46,7 @@ def fetchBingImage() -> None:
                     # Get the file basename and extension
                     baseName, extension = os.path.splitext(fileName)
                     # Write to file
-                    outputFilename: str = f'{BASE_OUTPUT_DIR}[{date.today():%Y-%m-%d}]{baseName}{extension}'
+                    outputFilename: str = os.path.join(BASE_OUTPUT_DIR, f'[{date.today():%Y-%m-%d}]{baseName}{extension}')
                     with open(outputFilename, 'wb') as f:
                         f.write(imageFile.content)
                     print(f'Image downloaded successfully and saved to: {outputFilename}')

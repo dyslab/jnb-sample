@@ -28,11 +28,13 @@ jobs:
           python3 -m pip install --upgrade pip
           pip install requests
           pip install httpcore
-      - run: python3 ${{ github.workspace }}/wallpaper/bing.py
+          cd ${{ github.workspace }}/wallpaper
+          python3 ./bing.py
       - uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
-          # $(date +'...') Usage: https://manpages.debian.org/bullseye/coreutils/date.1.en.html
-          msg: "Update by Github action: ${{ github.task.name }} Time: $(date +'%Y-%m-%d')"
+          msg: $COMMIT_MSG
         env:
           GH_TOKEN: ${{ github.token }}
+          # $(date +'...') Usage: https://manpages.debian.org/bullseye/coreutils/date.1.en.html
+          COMMIT_MSG: Update by Github action $GITHUB_WORKFLOW on $(date +'%Y-%m-%d') # Run No.$GITHUB_RUN_NUMBER
       - run: echo "🍏 This job's status is ${{ job.status }}."
