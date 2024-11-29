@@ -6,7 +6,7 @@ on:
 #    - cron: '15 2 * * *'
 
 jobs:
-  Fetch-Bing-Wallpaper:
+  fetch-bing-wallpaper:
     runs-on: ubuntu-latest
     steps:
       - run: |
