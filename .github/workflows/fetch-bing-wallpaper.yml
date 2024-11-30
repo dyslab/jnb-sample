@@ -1,24 +1,22 @@
 name: Fetch Bing Wallpaper Daily
 
-on: 
-  workflow_dispatch
-#  schedule:
-#    - cron: '15 2 * * *'
+on:
+  schedule:
+    - cron: '15 2 * * *'
+  workflow_dispatch:
 
 jobs:
   fetch-bing-wallpaper:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "::group::🏃 Runner start up"
-          echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
-          echo "🔎 The branch name is ${{ github.ref }} and the repository is ${{ github.repository }}."
-          echo "::endgroup::"
+      # - name: Runner startup welcome message
+      #   run: |
+      #     echo "::group::🏃 Runner startup"
+      #     echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
+      #     echo "🔎 The branch name is ${{ github.ref }} and the repository is ${{ github.repository }}."
+      #     echo "::endgroup::"
       - name: Check out repository code
         uses: actions/checkout@v4
-      - name: List files in the repository
-        run: |
-          ls ${{ github.workspace }}
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
@@ -31,15 +29,17 @@ jobs:
           pip install httpcore
           cd ${{ github.workspace }}/wallpaper
           python3 ./bing.py
-      - name: Get commit message
+      - name: Set commit message as output
         id: commit_msg
         run: |
-          # $(date +'...') Usage: https://manpages.debian.org/bullseye/coreutils/date.1.en.html
-          echo "message=Update by Github action $GITHUB_WORKFLOW on $(date +'%Y-%m-%d')" >> $GITHUB_OUTPUT
+          # The repo. of following action: https://github.com/scapeville/action-git-add-all-then-commit-then-push
+          # Usage of $(date +'...'): https://manpages.debian.org/bullseye/coreutils/date.1.en.html
+          echo "message=Update by Github action '$GITHUB_WORKFLOW' on $(date +'%Y-%m-%d') 🖼️" >> $GITHUB_OUTPUT
       - name: Commit changes and push
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
-          msg: "${{ steps.commit_msg.outputs.message }}"
+          name: 🤖 Wallpaper Bot
+          msg: ${{ steps.commit_msg.outputs.message }}
         env:
           GH_TOKEN: ${{ github.token }}
-      - run: echo "🍏 This job's status is ${{ job.status }}."
+      # - run: echo "🍏 This job's status is ${{ job.status }}."

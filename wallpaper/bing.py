@@ -25,13 +25,13 @@ def fetchBingImage() -> None:
         pattern: str = r'"Image":(\{.+\}),"Head'
         match: re.Match[str] | None = re.search(pattern, response.text)
         if match:
-            matchText: str = match.group()
-            jsonStartPos: int = matchText.index('{')
-            jsonEndPos: int = matchText.index('}') + 1
-            jsonText: str = matchText[jsonStartPos:jsonEndPos]
-            jsonObj: dict = eval(jsonText, {'true': True, 'false': False})
-            if jsonObj and jsonObj['Url']:
-                try:
+            try:
+                matchText: str = match.group()
+                jsonStartPos: int = matchText.index('{')
+                jsonEndPos: int = matchText.index('}') + 1
+                jsonText: str = matchText[jsonStartPos:jsonEndPos]
+                jsonObj: dict = eval(jsonText, {'true': True, 'false': False})
+                if jsonObj and jsonObj['Url']:
                     print(f'Found image: {jsonObj["Url"]}')
                     urlPattern : str | None = re.search(r'^http[s]?://', jsonObj["Url"])
                     if urlPattern is None:
@@ -49,13 +49,13 @@ def fetchBingImage() -> None:
                     outputFilename: str = os.path.join(BASE_OUTPUT_DIR, f'[{date.today():%Y-%m-%d}]{baseName}{extension}')
                     with open(outputFilename, 'wb') as f:
                         f.write(imageFile.content)
-                    print(f'Image downloaded successfully and saved to: {outputFilename}')
-                except Exception as e:
-                    print(e)
+                    print(f'[SUCCEED] Image downloaded successfully and saved to: {outputFilename}')
+            except Exception as e:
+                print(f'[ERROR] {e}')
         else:
-            print("No match found")
+            print(f'[FAILED] Unable to match the RegEx pattern {pattern} in response text 🤓')
     else:
-        print('Error:', response.status_code)
+        print(f'[ERROR] Response returned code {response.status_code}, returned text {response.text}')
 
 if __name__ == '__main__':
     createDirIfNotExists(BASE_OUTPUT_DIR)
