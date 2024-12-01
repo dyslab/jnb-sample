@@ -2,7 +2,7 @@ name: Fetch Bing Wallpaper Daily
 
 on:
   schedule:
-    - cron: '15 2 * * *'
+    - cron: '12 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -38,7 +38,7 @@ jobs:
       - name: Commit changes and push
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
-          name: 🤖 Wallpaper Bot
+          name: Wallpaper🤖[bot]
           msg: ${{ steps.commit_msg.outputs.message }}
         env:
           GH_TOKEN: ${{ github.token }}

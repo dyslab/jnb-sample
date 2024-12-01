@@ -21,7 +21,6 @@ def fetchBingImage() -> None:
         )
     # Check if the request was successful
     if response.status_code == 200:
-        # Match a string that starts with "The" and ends with "dog"
         pattern: str = r'"Image":(\{.+\}),"Head'
         match: re.Match[str] | None = re.search(pattern, response.text)
         if match:
