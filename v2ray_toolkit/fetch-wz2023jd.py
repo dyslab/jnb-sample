@@ -1,5 +1,6 @@
 import os
 import re
+import html
 import requests
 from typing import List
 
@@ -10,7 +11,7 @@ def traverseText(nodeArray: List[str], text: str) -> None:
     if matchText:
             indexEndPos : int = matchText[8].find('<')
             if indexEndPos > 0:
-                node : str = matchText[1] + matchText[7] + matchText[8][:indexEndPos]
+                node : str = matchText[1] + matchText[7] + html.unescape(matchText[8][:indexEndPos])
                 restPartText: str = text[indexEndPos:]
                 try:
                     nodeArray.index(node)
