@@ -3,7 +3,7 @@ import re
 import requests
 from typing import List
 
-DEFAULT_OUTPUT_FILE: str = os.path.splitext(os.path.realpath(__file__))[0] + '.yaml'  # Path of the output file
+DEFAULT_OUTPUT_FILE: str = f'{os.path.splitext(os.path.realpath(__file__))[0]}.txt'  # Path of the output file
 
 def traverseText(nodeArray: List[str], text: str) -> None:
     matchText : re.Match[str] | None = re.search(r'((vmess)|(vless)|(ssr)|(ss)|(trojan))(:\/\/)(.+)', text)
