@@ -2,7 +2,7 @@ name: Fetch Bing Wallpaper Daily
 
 on:
   schedule:
-    - cron: '12 3 * * *'
+    - cron: '15 3 * * *'
   workflow_dispatch:
 
 jobs:
@@ -15,31 +15,50 @@ jobs:
       #     echo "🐧 This job is now running on a ${{ runner.os }} server hosted by GitHub!"
       #     echo "🔎 The branch name is ${{ github.ref }} and the repository is ${{ github.repository }}."
       #     echo "::endgroup::"
+      
       - name: Check out repository code
         uses: actions/checkout@v4
+        
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.12'
           cache: 'pip' # caching pip dependencies
+      
       - name: Install dependencies and run script
         run: |
           python3 -m pip install --upgrade pip
           pip install requests
           pip install httpcore
-          cd ${{ github.workspace }}/wallpaper
-          python3 ./bing.py
+          echo "🔎 Default workspace folder is ${{ github.workspace }}"
+          # cd ${{ github.workspace }}/wallpaper
+          python3 ./wallpaper/bing.py
+
+      - name: Get Diff Action
+        id: git_diff
+        uses: technote-space/get-diff-action@v4
+        with:
+          PATTERNS: wallpaper/**/*
+      
       - name: Set commit message as output
+        if: steps.git_diff.outputs.diff
         id: commit_msg
         run: |
           # The repo. of following action: https://github.com/scapeville/action-git-add-all-then-commit-then-push
           # Usage of $(date +'...'): https://manpages.debian.org/bullseye/coreutils/date.1.en.html
           echo "message=Update by Github action '$GITHUB_WORKFLOW' on $(date +'%Y-%m-%d') 🖼️" >> $GITHUB_OUTPUT
+      
       - name: Commit changes and push
+        if: steps.git_diff.outputs.diff
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Wallpaper🤖[bot]
           msg: ${{ steps.commit_msg.outputs.message }}
         env:
           GH_TOKEN: ${{ github.token }}
+
+      - name: No changes message
+        if: ${{ !steps.git_diff.outputs.diff }}
+        run: echo "⚠️ No changes, No commit."
+      
       # - run: echo "🍏 This job's status is ${{ job.status }}."
