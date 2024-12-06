@@ -52,7 +52,11 @@ def fetchBingImage() -> None:
             except Exception as e:
                 print(f'[ERROR] {e}')
         else:
-            print(f'[FAILED] Unable to match the RegEx pattern {pattern} in response text 🤓')
+            # Write to file
+            outputFilename: str = os.path.join(BASE_OUTPUT_DIR, f'[{date.today():%Y-%m-%d}]bing_content_log.html')
+            with open(outputFilename, 'w') as log:
+                log.write(response.text)
+            print(f'[FAILED] Unable to match the RegEx pattern {pattern} in response text. Check log file {outputFilename} 🤓')
     else:
         print(f'[ERROR] Response returned code {response.status_code}, returned text {response.text}')
 
