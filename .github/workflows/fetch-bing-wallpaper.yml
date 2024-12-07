@@ -25,7 +25,7 @@ jobs:
           python-version: '3.12'
           cache: 'pip' # caching pip dependencies
       
-      - name: Install dependencies and run script
+      - name: Install dependencies, run script and git add changes (staged)
         run: |
           python3 -m pip install --upgrade pip
           pip install requests
@@ -33,16 +33,21 @@ jobs:
           echo "🔎 Default workspace folder is ${{ github.workspace }}"
           # cd ${{ github.workspace }}/wallpaper
           python3 ./wallpaper/bing.py
+          git add -A  # Add all changes to the staging area
 
-      - name: Get Diff Action
-        id: git_diff
-        uses: GrantBirki/git-diff-action@v2
-        with:
-          base_branch: "" # default is 	HEAD^1
-          file_output_only: "true"
-      
+      - name: Git add and diff (check staged changes)
+        id: check_staged_changes
+        run: |
+          if [[ -n "$(git diff --staged --exit-code)" ]]; then
+            echo "Changes detected."
+            echo "has_changes=true" >> $GITHUB_OUTPUT
+          else
+            echo "No changes detected."
+            echo "has_changes=false" >> $GITHUB_OUTPUT
+          fi
+
       - name: Set commit message as output
-        if: steps.git_diff.outputs.raw-diff-path
+        if: steps.check_staged_changes.outputs.has_changes
         id: commit_msg
         run: |
           # The repo. of following action: https://github.com/scapeville/action-git-add-all-then-commit-then-push
@@ -50,16 +55,17 @@ jobs:
           echo "message=Update by Github action '$GITHUB_WORKFLOW' on $(date +'%Y-%m-%d') 🖼️" >> $GITHUB_OUTPUT
       
       - name: Commit changes and push
-        if: steps.git_diff.outputs.raw-diff-path
+        if: steps.check_staged_changes.outputs.has_changes
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Wallpaper🤖[bot]
+          email: ${{ github.actor }}@users.noreply.github.com
           msg: ${{ steps.commit_msg.outputs.message }}
         env:
           GH_TOKEN: ${{ github.token }}
 
       - name: No changes message
-        if: ${{ !steps.git_diff.outputs.raw-diff-path }}
+        if: ${{ !steps.check_staged_changes.outputs.has_changes }}
         run: echo "⚠️ No changes, No commit."
       
       # - run: echo "🍏 This job's status is ${{ job.status }}."
