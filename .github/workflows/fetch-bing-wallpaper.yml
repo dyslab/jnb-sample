@@ -36,12 +36,10 @@ jobs:
 
       - name: Get Diff Action
         id: git_diff
-        uses: technote-space/get-diff-action@v4
-        with:
-          PATTERNS: wallpaper/**/*
+        uses: GrantBirki/git-diff-action@v
       
       - name: Set commit message as output
-        if: steps.git_diff.outputs.diff
+        if: steps.git_diff.outputs.raw-diff-path
         id: commit_msg
         run: |
           # The repo. of following action: https://github.com/scapeville/action-git-add-all-then-commit-then-push
@@ -49,7 +47,7 @@ jobs:
           echo "message=Update by Github action '$GITHUB_WORKFLOW' on $(date +'%Y-%m-%d') 🖼️" >> $GITHUB_OUTPUT
       
       - name: Commit changes and push
-        if: steps.git_diff.outputs.diff
+        if: steps.git_diff.outputs.raw-diff-path
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Wallpaper🤖[bot]
@@ -58,7 +56,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: No changes message
-        if: ${{ !steps.git_diff.outputs.diff }}
+        if: ${{ !steps.git_diff.outputs.raw-diff-path }}
         run: echo "⚠️ No changes, No commit."
       
       # - run: echo "🍏 This job's status is ${{ job.status }}."
