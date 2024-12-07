@@ -46,7 +46,7 @@ jobs:
           fi
 
       - name: Set commit message as output
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: ${{ steps.check_changes.outputs.has_changes == 'true' }}
         id: commit_msg
         run: |
           # The repo. of following action: https://github.com/scapeville/action-git-add-all-then-commit-then-push
@@ -54,7 +54,7 @@ jobs:
           echo "message=Update by Github action '$GITHUB_WORKFLOW' on $(date +'%Y-%m-%d') 🖼️" >> $GITHUB_OUTPUT
       
       - name: Commit changes and push
-        if: steps.check_changes.outputs.has_changes == 'true'
+        if: ${{ steps.check_changes.outputs.has_changes == 'true' }}
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Wallpaper🤖[bot]
@@ -64,7 +64,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: No changes message
-        if: steps.check_changes.outputs.has_changes != 'true'
+        if: ${{ steps.check_changes.outputs.has_changes != 'true' }}
         run: echo "⚠️ No changes, No commit."
       
       # - run: echo "🍏 This job's status is ${{ job.status }}."
