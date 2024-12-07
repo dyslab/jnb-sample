@@ -25,13 +25,12 @@ jobs:
           python-version: '3.12'
           cache: 'pip' # caching pip dependencies
       
-      - name: Install dependencies, run script and git add changes (staged)
+      - name: Install dependencies, run script and git add changes (staging)
         run: |
           python3 -m pip install --upgrade pip
           pip install requests
           pip install httpcore
           echo "🔎 Default workspace folder is ${{ github.workspace }}"
-          # cd ${{ github.workspace }}/wallpaper
           python3 ./wallpaper/bing.py
           git add -A  # Add all changes to the staging area
 
@@ -47,7 +46,7 @@ jobs:
           fi
 
       - name: Set commit message as output
-        if: steps.check_staged_changes.outputs.has_changes
+        if: steps.check_changes.outputs.has_changes == 'true'
         id: commit_msg
         run: |
           # The repo. of following action: https://github.com/scapeville/action-git-add-all-then-commit-then-push
@@ -55,7 +54,7 @@ jobs:
           echo "message=Update by Github action '$GITHUB_WORKFLOW' on $(date +'%Y-%m-%d') 🖼️" >> $GITHUB_OUTPUT
       
       - name: Commit changes and push
-        if: steps.check_staged_changes.outputs.has_changes
+        if: steps.check_changes.outputs.has_changes == 'true'
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Wallpaper🤖[bot]
@@ -65,7 +64,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
 
       - name: No changes message
-        if: ${{ !steps.check_staged_changes.outputs.has_changes }}
+        if: steps.check_changes.outputs.has_changes != 'true'
         run: echo "⚠️ No changes, No commit."
       
       # - run: echo "🍏 This job's status is ${{ job.status }}."
