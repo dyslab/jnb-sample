@@ -58,7 +58,7 @@ jobs:
         uses: scapeville/action-git-add-all-then-commit-then-push@v1
         with:
           name: Wallpaper🤖[bot]
-          email: ${{ github.actor }}@users.noreply.github.com
+          email: ${{ github.actor_id }}+${{ github.actor }}@users.noreply.github.com
           msg: ${{ steps.commit_msg.outputs.message }}
         env:
           GH_TOKEN: ${{ github.token }}
