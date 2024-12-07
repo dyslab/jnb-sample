@@ -37,6 +37,10 @@ jobs:
       - name: Get Diff Action
         id: git_diff
         uses: GrantBirki/git-diff-action@v2
+        with:
+          json_diff_file_output: diff.json
+          raw_diff_file_output: diff.txt
+          file_output_only: "true"
       
       - name: Set commit message as output
         if: steps.git_diff.outputs.raw-diff-path
