@@ -36,7 +36,7 @@ jobs:
 
       - name: Get Diff Action
         id: git_diff
-        uses: GrantBirki/git-diff-action@v
+        uses: GrantBirki/git-diff-action@v2
       
       - name: Set commit message as output
         if: steps.git_diff.outputs.raw-diff-path
