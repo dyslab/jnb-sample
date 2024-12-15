@@ -15,7 +15,9 @@
 python3 -m venv venv
 
 # Activate venv mode in current folder
-. venv/bin/activate
+. venv/bin/activate       # On Linux / macOS
+# .\venv\Scripts\Activate.ps1   # On Windows (Powershell)
+# .\venv\Scripts\activate.bat   # On Windows (cmd)
 
 # Install packages for this project in venv mode
 pip install -r requirements.txt
@@ -23,18 +25,15 @@ pip install -r requirements.txt
 # BTW: Exporting `requirements.txt` by CLI `pip freeze > requirements.txt`
 ```
 
-## Running app in venv mode
+## Launch jupyter notebook with venv mode
 
 ```bash
-# Start notebook in venv mode under current (working) folder.
-jupyter notebook # Command prompt added a prefix '(venv)'
-
-# Or use shell script file below. Type `chmod +x ./nbstart` at first to make the file executable
-./nbstart
+# Launch notebook with venv mode in current (working) folder.
+jupyter notebook          # Command prompt added a prefix '(venv)'
 ```
 
 ***Project history***
 
-· Last modified date: 20 Oct 2024
+· Last modified date: 15 Dec 2024
 
 · Project creation date: 28 May 2019
