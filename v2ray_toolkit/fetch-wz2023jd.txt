@@ -1,10 +1,3 @@
-trojan://wztgmfjdpd@www.visa.com:2086?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
-trojan://wztgmfjdpd@www.visa.com:80?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
-trojan://wztgmfjdpd@www.visa.com:8880?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
-trojan://wztgmfjdpd@www.visa.com:2052?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
-trojan://wztgmfjdpd@www.visa.com:2095?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
-trojan://wztgmfjdpd@www.visa.com:2082?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
-trojan://wztgmfjdpd@www.visa.com:8080?security=none&fp=randomized&type=ws&host=tg27.3c9ql0ty.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
 trojan://wzyyds@www.visa.com:8080?security=none&fp=randomized&type=ws&host=29tg.l2orwuxg.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
 trojan://wzyyds@www.visa.com:80?security=none&fp=randomized&type=ws&host=29tg.l2orwuxg.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
 trojan://wzyyds@www.visa.com:2095?security=none&fp=randomized&type=ws&host=29tg.l2orwuxg.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
@@ -54,3 +47,10 @@ trojan://weizai@www.visa.com:8880?security=none&fp=randomized&type=ws&host=14tg.
 trojan://weizai@www.visa.com:2052?security=none&fp=randomized&type=ws&host=14tg.vn3d8e0c.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
 trojan://weizai@www.visa.com:8080?security=none&fp=randomized&type=ws&host=14tg.vn3d8e0c.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
 trojan://weizai@www.visa.com:2082?security=none&fp=randomized&type=ws&host=14tg.vn3d8e0c.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:80?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:2086?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:8080?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:2052?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:8880?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:2095?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
+trojan://weizai@www.visa.com:2082?security=none&fp=randomized&type=ws&host=16tg.abllb7fe.workers.dev&path=%2F%3Fed%3D2560#%E3%80%90%E9%95%BF%E6%9C%9F%E6%9C%89%E6%95%88%E3%80%91TG%40wz2023jd
