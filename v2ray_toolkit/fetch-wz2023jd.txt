@@ -80,3 +80,10 @@ vless://bf09ef80-aae7-42b7-ab37-a29cd310a9a4@www.visa.com:80?encryption=none&sec
 vless://bf09ef80-aae7-42b7-ab37-a29cd310a9a4@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0121.v69a2770.workers.dev&path=%2F%3Fed%3D2560#01.21TG%40wz2023jd
 vless://bf09ef80-aae7-42b7-ab37-a29cd310a9a4@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0121.v69a2770.workers.dev&path=%2F%3Fed%3D2560#01.21TG%40wz2023jd
 vless://bf09ef80-aae7-42b7-ab37-a29cd310a9a4@www.visa.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0121.v69a2770.workers.dev&path=%2F%3Fed%3D2560#01.21TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
+vless://50744585-10a7-4808-bc13-8947c02bd955@www.visa.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0122.xz9a1kdw.workers.dev&path=%2F%3Fed%3D2560#1.22TG%40wz2023jd
