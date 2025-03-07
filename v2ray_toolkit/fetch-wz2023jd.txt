@@ -1,11 +1,3 @@
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-ss://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
-vless://a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5@www.ddwhm.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0210.uous1wog.workers.dev&path=%2F%3Fed%3D2560#02.10%20TG%40wz2023jd
 vless://c2aff09d-4fd7-4ee6-adc3-78eb352debe7@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0213.nsbt5eve.workers.dev&path=%2F%3Fed%3D2560#02.13%20TG%40wz2023jd
 vless://c2aff09d-4fd7-4ee6-adc3-78eb352debe7@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0213.nsbt5eve.workers.dev&path=%2F%3Fed%3D2560#02.13%20TG%40wz2023jd
 vless://c2aff09d-4fd7-4ee6-adc3-78eb352debe7@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0213.nsbt5eve.workers.dev&path=%2F%3Fed%3D2560#02.13%20TG%40wz2023jd
@@ -64,3 +56,10 @@ vless://c3aea77c-cb41-442b-a083-2811707ba623@www.visa.com:2052?encryption=none&s
 vless://c3aea77c-cb41-442b-a083-2811707ba623@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0305.reandoor.workers.dev&path=%2F%3Fed%3D2560#3.5%20TG%40wz2023jd
 vless://c3aea77c-cb41-442b-a083-2811707ba623@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0305.reandoor.workers.dev&path=%2F%3Fed%3D2560#3.5%20TG%40wz2023jd
 vless://c3aea77c-cb41-442b-a083-2811707ba623@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0305.reandoor.workers.dev&path=%2F%3Fed%3D2560#3.5%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
