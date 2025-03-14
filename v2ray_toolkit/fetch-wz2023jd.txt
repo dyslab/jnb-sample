@@ -1,11 +1,3 @@
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-ss://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
-vless://a3fdef53-af0c-4777-b941-c52707d5afe9@www.ddwhm.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0215.kiefcascz.workers.dev&path=%2F%3Fed%3D2560#02.15%20TG%40wz2023jd
 vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
 vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
 vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
@@ -56,3 +48,10 @@ vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2086?encryption=none&s
 vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
 vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
 vless://a575a85e-a916-40f3-bf61-fd5490d64f0b@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0307.tcgmpeed8.workers.dev&path=%2F%3Fed%3D2560#3.7%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
+vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
