@@ -1,11 +1,3 @@
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-ss://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
-vless://dbf403f4-b871-4446-8712-675562dbbb7b@www.ddwhm.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0221.enedrehd.workers.dev&path=%2F%3Fed%3D2560#02.21%20TG%40wz2023jd
 vless://41956a47-8432-4a3f-b70d-a54fc7efd6b8@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0223.jq2ter91.workers.dev&path=%2F%3Fed%3D2560#02.23%20TG%40wz2023jd
 vless://41956a47-8432-4a3f-b70d-a54fc7efd6b8@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0223.jq2ter91.workers.dev&path=%2F%3Fed%3D2560#02.23%20TG%40wz2023jd
 vless://41956a47-8432-4a3f-b70d-a54fc7efd6b8@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0223.jq2ter91.workers.dev&path=%2F%3Fed%3D2560#02.23%20TG%40wz2023jd
