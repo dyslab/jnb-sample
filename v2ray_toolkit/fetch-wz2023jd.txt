@@ -26,3 +26,10 @@ vless://ce4639ef-2a2d-4d02-9808-87083647677e@stock.hostmonit.com:8080?encryption
 vless://ce4639ef-2a2d-4d02-9808-87083647677e@stock.hostmonit.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=515.vannoot.workers.dev&path=%2F%3Fed%3D2560#5.15%20TG%40wz2023jd
 vless://ce4639ef-2a2d-4d02-9808-87083647677e@stock.hostmonit.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=515.vannoot.workers.dev&path=%2F%3Fed%3D2560#5.15%20TG%40wz2023jd
 vless://ce4639ef-2a2d-4d02-9808-87083647677e@stock.hostmonit.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=515.vannoot.workers.dev&path=%2F%3Fed%3D2560#5.15%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:80?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
+vless://38141d3b-ddde-4a2f-8d26-a31ddcd49c8a@stock.hostmonit.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=520.msdtlasm.workers.dev&path=%2F%3Fed%3D2560#5.20%20TG%40wz2023jd
