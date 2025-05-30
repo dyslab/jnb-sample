@@ -1,10 +1,3 @@
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
-vless://9ffa6da8-26dc-435c-884b-32662e7ffe7e@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0314.hiyasta2.workers.dev&path=%2F%3Fed%3D2560#3.14%20TG%40wz2023jd
 vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@stock.hostmonit.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0506tg.neeleomg.workers.dev&path=%2F%3Fed%3D2560#5.6%E3%80%90TG%40wz2023jd%E3%80%91
 vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@stock.hostmonit.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0506tg.neeleomg.workers.dev&path=%2F%3Fed%3D2560#5.6%E3%80%90TG%40wz2023jd%E3%80%91
 vless://86c50e3a-5b87-49dd-bd20-03c7f2735e40@stock.hostmonit.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0506tg.neeleomg.workers.dev&path=%2F%3Fed%3D2560#5.6%E3%80%90TG%40wz2023jd%E3%80%91
@@ -40,3 +33,11 @@ vless://68612e16-e7c8-4aa0-8f1e-eff25d839c17@stock.hostmonit.com:2095?encryption
 vless://68612e16-e7c8-4aa0-8f1e-eff25d839c17@stock.hostmonit.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0529.fusestech.workers.dev&path=%2F%3Fed%3D2560#5.29%20TG%40wz2023jd
 vless://68612e16-e7c8-4aa0-8f1e-eff25d839c17@stock.hostmonit.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0529.fusestech.workers.dev&path=%2F%3Fed%3D2560#5.29%20TG%40wz2023jd
 vless://68612e16-e7c8-4aa0-8f1e-eff25d839c17@stock.hostmonit.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0529.fusestech.workers.dev&path=%2F%3Fed%3D2560#5.29%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+ss://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
