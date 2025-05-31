@@ -41,3 +41,11 @@ vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:8080?encryption=none&s
 vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
 vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
 vless://c01d6d82-6714-461c-82e1-7b3d0c8f6af8@www.visa.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0530.vauggcod.workers.dev&path=%2F%3Fed%3D2560#5.30%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:8880?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:8080?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+ss://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:80?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:2095?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:2052?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:2082?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
+vless://216b3705-14c4-4fd7-a412-3b60834defa0@stock.hostmonit.com:2086?encryption=none&security=none&fp=randomized&type=ws&host=0531.bysset3.workers.dev&path=%2F%3Fed%3D2560#5.31%20TG%40wz2023jd
