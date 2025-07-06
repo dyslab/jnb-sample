@@ -1,13 +1,3 @@
-vless://583ceab3-4022-4553-9158-9bedc625ad4e@185.238.228.39:8880?encryption=none&security=none&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40MxlShare%20%40WangCai2%20%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-vless://49dc19c3-e447-4422-9a54-35af28207a6e@45.95.186.159:50002?encryption=none&security=tls&sni=mihu.sorry.ip-ddns.com&fp=random&type=ws&host=mihu.sorry.ip-ddns.com&path=%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-trojan://659990ba-650f-11ea-a7af-f23c9164ca5d@7fd1be71-sxc9s0-tcselz-oua4.cm5.cnkuaishou.com:27231?security=tls&sni=7fd1be71-sxc9s0-tcselz-oua4.cm5.cnkuaishou.com&type=tcp&headerType=none#7.1%20TG%40wz2023jd
-vless://583ceab3-4022-4553-9158-9bedc625ad4e@155.46.167.177:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&fp=chrome&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-vless://583ceab3-4022-4553-9158-9bedc625ad4e@5.182.85.177:8880?encryption=none&security=none&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-vless://1d173704-d5cc-4ce2-8b06-3a9a71037530@cdnjs.com:443?encryption=none&security=tls&sni=rayan-navy.foton.dpdns.org&fp=chrome&type=ws&host=rayan-navy.foton.dpdns.org&path=%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-vless://d8dd94fd-540e-461d-b5d4-acebef02c22a@59.153.217.57:34045?encryption=none&security=reality&sni=visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me&fp=firefox&pbk=cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA&sid=e8ab71d0&type=tcp&headerType=none#7.1%20TG%40wz2023jd
-vless://583ceab3-4022-4553-9158-9bedc625ad4e@45.131.5.177:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&fp=chrome&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-vless://583ceab3-4022-4553-9158-9bedc625ad4e@190.93.247.177:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&fp=chrome&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.1%20TG%40wz2023jd
-vless://b6efaf7e-6099-457d-b4a2-b01dde469533@172.67.73.163:8080?encryption=none&security=none&sni=0q.rOk8rzMpV3.ZULair.Org.&type=ws&host=0q.rOk8rzMpV3.ZULair.Org.&path=%2F%3Fed%3D2048#7.1%20TG%40wz2023jd
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@155.46.213.177:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&fp=chrome&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.2%20TG%40wz2023jd
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@195.13.45.177:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&fp=chrome&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.2%20TG%40wz2023jd
 trojan://cb96c846-fd6d-11ef-a910-f23c9164ca5d@0ce4f6f8-sytz40-szi71e-1thts.cm5.cnkuaishou.com:14234?security=tls&type=tcp&headerType=none#7.2%20TG%40wz2023jd
@@ -45,3 +35,7 @@ trojan://3ee091ca-ab9c-11ef-a791-f23c9164ca5d@0fb905fb-syzj40-szd8vg-1ryup.cu2.p
 trojan://de003c72-0157-11ef-86da-f23c91cfbbc9@6535b771-sz1ds0-t35wl0-1r9dt.cu2.plebai.net:15229?security=tls&headerType=&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20284
 ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206WmprMk0yWmpOVFJoWm1Zd1pEbGlNdz09Ok5USXdPREUwT0RndE1UazJOeTAwTmc9PQ
 trojan://d0d08cddacc3190ea81b1b792e1b5fde@36.151.251.29:53067?security=tls&headerType=&type=tcp&sni=www.baidu.com#%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%2038
+ss://YWVzLTI1Ni1nY206RkQ4QUtUSUdURU5LSEFDQw%3D%3D@w72tapyb.slashdevslashnetslashtun.net:16008#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20130
+ss://YWVzLTI1Ni1nY206S0E3REFESzA4QjZPVjc3TQ%3D%3D@8tv68qhq.slashdevslashnetslashtun.net:15013#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%20052
+trojan://e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9@183.240.179.89:32233?security=tls&headerType=&type=tcp#%F0%9F%87%AE%F0%9F%87%A9%20%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%20018
+trojan://aed1cc24-351d-11ef-ba52-f23c9164ca5d@183.240.179.89:31233?security=tls&headerType=&type=tcp#%F0%9F%87%B2%F0%9F%87%BE%20%E9%A9%AC%E6%9D%A5%E8%A5%BF%E4%BA%9A%E5%AE%B6%E5%AE%BD%20055
