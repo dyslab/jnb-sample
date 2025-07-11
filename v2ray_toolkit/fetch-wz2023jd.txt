@@ -1,10 +1,3 @@
-ss://YWVzLTI1Ni1nY206SzIxMkNWTDNQVDQxRzdENg%3D%3D@8tv68qhq.slashdevslashnetslashtun.net:15005#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%20014
-ss://YWVzLTI1Ni1nY206N0hKTzY0WTY5WVAyTDBLTQ%3D%3D@ti3hyra4.slashdevslashnetslashtun.net:15013#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%20020
-ss://YWVzLTI1Ni1nY206OEtRVDM0V1NBV0k1MklCRA%3D%3D@ti3hyra4.slashdevslashnetslashtun.net:16002#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%2019
-trojan://3ee091ca-ab9c-11ef-a791-f23c9164ca5d@0fb905fb-syzj40-szd8vg-1ryup.cu2.plebai.net:15229?security=tls&headerType=&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20036
-trojan://de003c72-0157-11ef-86da-f23c91cfbbc9@6535b771-sz1ds0-t35wl0-1r9dt.cu2.plebai.net:15229?security=tls&headerType=&type=tcp#%F0%9F%87%BA%F0%9F%87%B8%20%E7%BE%8E%E5%9B%BD%20284
-ss://MjAyMi1ibGFrZTMtYWVzLTEyOC1nY206WmprMk0yWmpOVFJoWm1Zd1pEbGlNdz09Ok5USXdPREUwT0RndE1UazJOeTAwTmc9PQ
-trojan://d0d08cddacc3190ea81b1b792e1b5fde@36.151.251.29:53067?security=tls&headerType=&type=tcp&sni=www.baidu.com#%F0%9F%87%AF%F0%9F%87%B5%20%E6%97%A5%E6%9C%AC%2038
 ss://YWVzLTI1Ni1nY206RkQ4QUtUSUdURU5LSEFDQw%3D%3D@w72tapyb.slashdevslashnetslashtun.net:16008#%F0%9F%87%B8%F0%9F%87%AC%20%E6%96%B0%E5%8A%A0%E5%9D%A1%20130
 ss://YWVzLTI1Ni1nY206S0E3REFESzA4QjZPVjc3TQ%3D%3D@8tv68qhq.slashdevslashnetslashtun.net:15013#%F0%9F%87%AD%F0%9F%87%B0%20%E9%A6%99%E6%B8%AF%20052
 trojan://e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9@183.240.179.89:32233?security=tls&headerType=&type=tcp#%F0%9F%87%AE%F0%9F%87%A9%20%E5%8D%B0%E5%BA%A6%E5%B0%BC%E8%A5%BF%E4%BA%9A%20018
@@ -49,3 +42,13 @@ ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNToxM2Y0NWJjYi0xMmZlLTQxMjEtOTE5My04OWQxMTE0YjI
 ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowMWE4NjliOC1hODNlLTQwNDYtOGI0Ny00MzAzYzk1NzFmNmY
 vless://fab7bf9c-ddb9-4563-8a04-fb01ce6c0fbf@91.193.58.53:8880?encryption=none&security=none&sni=kjgx.laoyoutiao.link&type=ws&host=kjgx.laoyoutiao.link&path=Telegram%40pgkj0402%2F%3Fed%3D2560#7.10%20TG%40wz2023jd
 vless://583ceab3-4022-4553-9158-9bedc625ad4e@185.251.81.177:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&fp=chrome&type=ws&host=ip.langmanshanxi.top&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#7.10%20TG%40wz2023jd
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo0NTI4OWEzZi04ODdkLTRkNmUtYjE3MS0zYTllYjE3OWQ1YjA
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlRHQHd6MjAyM2pkIiwNCiAgImFkZCI6ICJGZmZ2dlZibmhKdWk4LjIyMjU2MC5YWXoiLA0KICAicG9ydCI6ICI0NDMiLA0KICAiaWQiOiAiNzcwMWRkZjUtNmE0OC00MDFiLWEzZWMtOGFmNTJiNmRlYjQ4IiwNCiAgImFpZCI6ICIwIiwNCiAgInNjeSI6ICJhdXRvIiwNCiAgIm5ldCI6ICJ3cyIsDQogICJ0eXBlIjogImF1dG8iLA0KICAiaG9zdCI6ICJGZmZ2dlZibmhKdWk4LjIyMjU2MC5YWXoiLA0KICAicGF0aCI6ICIvbWx5UjV0bWNLeDNod2VCb3B1aFdFYklYIiwNCiAgInRscyI6ICJ0bHMiLA0KICAic25pIjogIiIsDQogICJhbHBuIjogIiINCn0=
+vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIkNOIFRHQHd6MjAyM2pkIiwNCiAgImFkZCI6ICIxMjAuMjM3Ljc5LjE1NyIsDQogICJwb3J0IjogIjQxMTc0IiwNCiAgImlkIjogIjQxODA0OGFmLWEyOTMtNGI5OS05YjBjLTk4Y2EzNTgwZGQyNCIsDQogICJhaWQiOiAiMCIsDQogICJzY3kiOiAiYXV0byIsDQogICJuZXQiOiAidGNwIiwNCiAgInR5cGUiOiAibm9uZSIsDQogICJob3N0IjogIiIsDQogICJwYXRoIjogIiIsDQogICJ0bHMiOiAiIiwNCiAgInNuaSI6ICIiLA0KICAiYWxwbiI6ICIiLA0KICAiZnAiOiAiIg0KfQ==
+vless://7248e825-887c-48b9-83bc-c26bc6392bf8@172.67.162.74:443?encryption=none&security=tls&sni=xxsCDfr5.IRAN.pP.UA&alpn=http%2F1.1&fp=chrome&type=ws&host=xxsCDfr5.IRAN.pP.UA&path=%2FW02wBrOOqlSUywV3ibrzzKXJGy3S1#TG%40wz2023jd%20%E7%BE%8E%E5%9B%BD%2011
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTo5MzE5YWYyNS01NDc4LTRmNzMtYTJjZS0xZmFlNDY0NGQ4YWU
+vless://7248e825-887c-48b9-83bc-c26bc6392bf8@104.21.42.250:80?encryption=none&security=none&sni=xxcdvfgt.191268.xyz&type=ws&host=xxcdvfgt.191268.xyz&path=%2FW02wBrOOqlSUywV3ibrzzKXJGy3S1#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD%20TG%40wz2023jd
+vless://40c708ca-42e4-4224-a12d-1dbd7ef1e0b7@94.140.0.35:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&type=ws&host=free.cfdns.online&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#%E7%BE%8E%E5%9B%BD%20TG%40wz2023jd
+vless://509ed9b7-8d64-4204-8ec8-6b749020ac3f@104.21.3.189:443?encryption=none&security=tls&sni=oo098.89060004.xyZ&type=ws&host=oo098.89060004.xyz&path=%2FVlJKGXt3aXBStn7#%F0%9F%87%BA%F0%9F%87%B8_%E7%BE%8E%E5%9B%BD%20TG%40wz2023jd
+vless://40c708ca-42e4-4224-a12d-1dbd7ef1e0b7@14.102.229.35:8880?encryption=none&security=none&sni=Telegram-channel-WangCai2&type=ws&host=free.cfdns.online&path=%2FTelegram%F0%9F%87%A8%F0%9F%87%B3%20%40WangCai2%20%2F%3Fed%3D2560#%E7%BE%8E%E5%9B%BD%20TG%40wz2023jd
+ss://Y2hhY2hhMjAtaWV0Zi1wb2x5MTMwNTowNzJkOGRmYS1jNGNiLTQ5NWMtYjc5ZS1lMGJkZTg4MzM3NjY
