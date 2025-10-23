@@ -20,6 +20,8 @@ python3 -m venv venv
 # .\venv\Scripts\activate.bat   # On Windows (cmd)
 
 # Install packages for this project in venv mode
+# For Windows: Install Microsoft C++ Build Tools in advance.
+#   Ref: https://visualstudio.microsoft.com/visual-cpp-build-tools/
 pip install -r requirements.txt
 
 # BTW: Exporting `requirements.txt` by CLI `pip freeze > requirements.txt`
